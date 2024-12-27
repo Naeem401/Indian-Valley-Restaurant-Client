@@ -1,0 +1,74 @@
+[
+  {
+    "itemName": "Samosa",
+    "description": "Crispy golden pastry filled with spiced potatoes and peas, served with chutney.",
+    "calories": 250,
+    "price": 18,
+    "image": "https://i.ibb.co/mGJXLrn/resize-17293805174549199023597343226633534191477325379493785172782537n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Lentil Soup",
+    "description": "A hearty and warming lentil soup infused with aromatic spices and herbs.",
+    "calories": 180,
+    "price": 16,
+    "image": "https://i.ibb.co/C7PhhmX/resize-1729380732884242753166744825258961928934561183999073197985445n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Caesar Salad",
+    "description": "Crisp romaine lettuce, creamy Caesar dressing, parmesan, and croutons for a fresh experience.",
+    "calories": 200,
+    "price": 22,
+    "image": "https://i.ibb.co/zhHTxdH/resize-172938079210567215532945756274218781932952573542241916587098721n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Spicy Potato",
+    "description": "Golden potatoes tossed in spicy seasoning, cooked to perfection, served hot.",
+    "calories": 240,
+    "price": 26,
+    "image": "https://i.ibb.co/9yc2Yyt/resize-1729380679139095096634375189233817028420841061398088129955476903n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Mutton Seekh Kabab",
+    "description": "Juicy mutton minced with spices, skewered and grilled to smoky perfection.",
+    "calories": 320,
+    "price": 35,
+    "image": "https://i.ibb.co/28Zr9sq/resize-1729380707309094643282848645214658934209037026226949504213124n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "King Fish Tandoori",
+    "description": "King fish marinated in tandoori spices, grilled to perfection in a traditional tandoor.",
+    "calories": 300,
+    "price": 58,
+    "image": "https://i.ibb.co/41g6rp7/resize-17293806027332909303597428046633540991476645276297066397259773n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Chakan Dum Biryani",
+    "description": "Aromatic biryani rice cooked with tender chicken, layered with spices and herbs.",
+    "calories": 450,
+    "price": 38,
+    "image": "https://i.ibb.co/8bFdTc6/resize-17293806523090049913542664706487488239415254035516519260044997n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Mojito Strawberry",
+    "description": "Refreshing mojito with a burst of fresh strawberries, mint, and a zesty lime twist.",
+    "calories": 110,
+    "price": 22,
+    "image": "https://i.ibb.co/KD1tDHd/resize-172938075621026881452984340134404656714365097734293589635676649n.jpg",
+    "popular": true
+  },
+  {
+    "itemName": "Gulab Jamun",
+    "description": "Soft milk-based dumplings soaked in sugar syrup, a classic Indian dessert delight.",
+    "calories": 300,
+    "price": 18,
+    "image": "https://i.ibb.co/xXQCcgL/resize-17293806198921171773556939036508965537267525692942197872918886n.jpg",
+    "popular": true
+  }
+]

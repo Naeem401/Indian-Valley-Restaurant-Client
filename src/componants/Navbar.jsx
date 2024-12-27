@@ -25,7 +25,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? 'text-[#EEFF25]' : 'hover:text-[#EEFF25]'
+                isActive ? 'text-[#D99904]' : 'hover:text-[#D99904]'
               }
             >
               Home
@@ -33,7 +33,7 @@ const Navbar = () => {
             <NavLink
               to="/menu"
               className={({ isActive }) =>
-                isActive ? 'text-[#EEFF25]' : 'hover:text-[#EEFF25]'
+                isActive ? 'text-[#D99904]' : 'hover:text-[#D99904]'
               }
             >
               Our Menu
@@ -41,7 +41,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? 'text-[#EEFF25]' : 'hover:text-[#EEFF25]'
+                isActive ? 'text-[#D99904]' : 'hover:text-[#D99904]'
               }
             >
               Contact Us
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Login button */}
           <div className="hidden md:block">
-            <button className="bg-white text-[#151515] font-bold py-2 px-4 rounded">
+            <button className="bg-[#D99904] text-white font-bold py-2 px-4 rounded">
               Login
             </button>
           </div>
@@ -115,8 +115,8 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? 'block text-base font-medium text-[#EEFF25]'
-                : 'block text-base font-medium text-white hover:text-[#EEFF25]'
+                ? 'block text-base font-medium text-[#D99904]'
+                : 'block text-base font-medium text-white hover:text-[#D99904]'
             }
             onClick={() => setIsOpen(false)}
           >
@@ -126,8 +126,8 @@ const Navbar = () => {
             to="/menu"
             className={({ isActive }) =>
               isActive
-                ? 'block text-base font-medium text-[#EEFF25]'
-                : 'block text-base font-medium text-white hover:text-[#EEFF25]'
+                ? 'block text-base font-medium text-[#D99904]'
+                : 'block text-base font-medium text-white hover:text-[#D99904]'
             }
             onClick={() => setIsOpen(false)}
           >
@@ -137,15 +137,15 @@ const Navbar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? 'block text-base font-medium text-[#EEFF25]'
-                : 'block text-base font-medium text-white hover:text-[#EEFF25]'
+                ? 'block text-base font-medium text-[#D99904]'
+                : 'block text-base font-medium text-white hover:text-[#D99904]'
             }
             onClick={() => setIsOpen(false)}
           >
             Contact Us
           </NavLink>
           <button
-            className="bg-white text-[#151515] font-bold py-2 px-4 rounded w-full"
+            className="bg-[#D99904] text-[#151515] font-bold py-2 px-4 rounded w-full"
             onClick={() => setIsOpen(false)}
           >
             Login
