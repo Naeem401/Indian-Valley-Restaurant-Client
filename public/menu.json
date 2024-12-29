@@ -1,74 +1,2959 @@
 [
   {
-    "itemName": "Samosa",
-    "description": "Crispy golden pastry filled with spiced potatoes and peas, served with chutney.",
-    "calories": 250,
-    "price": 18,
-    "image": "https://i.ibb.co/mGJXLrn/resize-17293805174549199023597343226633534191477325379493785172782537n.jpg",
-    "popular": true
-  },
-  {
-    "itemName": "Lentil Soup",
-    "description": "A hearty and warming lentil soup infused with aromatic spices and herbs.",
-    "calories": 180,
+    "id": 1,
+    "name": {
+      "en": "CHICKEN CORN SOUP",
+      "ar": "شوربة دجاج بل ذرة"
+    },
+    "calories": 260,
     "price": 16,
-    "image": "https://i.ibb.co/C7PhhmX/resize-1729380732884242753166744825258961928934561183999073197985445n.jpg",
-    "popular": true
+    "description": {
+      "en": "Chicken corn soup with sweet corn.",
+      "ar": "شوربة دجاج بالذرة الحلوة."
+    },
+    "category": {
+      "en": "Soups",
+      "ar": "الشوربات"
+    },
+    "image": "https://live.staticflickr.com/65535/54120242779_51f4557231_m.jpg"
   },
   {
-    "itemName": "Caesar Salad",
-    "description": "Crisp romaine lettuce, creamy Caesar dressing, parmesan, and croutons for a fresh experience.",
-    "calories": 200,
-    "price": 22,
-    "image": "https://i.ibb.co/zhHTxdH/resize-172938079210567215532945756274218781932952573542241916587098721n.jpg",
-    "popular": true
+    "id": 2,
+    "name": {
+      "en": "PRAWN CORN SOUP",
+      "ar": "شوربة ربيان بل ذرة"
+    },
+    "calories": 250,
+    "price": 17,
+    "description": {
+      "en": "Prawn corn soup with a rich flavor.",
+      "ar": "شوربة ربيان بنكهة غنية."
+    },
+    "category": {
+      "en": "Soups",
+      "ar": "الشوربات"
+    },
+    "image": "https://live.staticflickr.com/65535/54120242779_51f4557231_m.jpg"
   },
   {
-    "itemName": "Spicy Potato",
-    "description": "Golden potatoes tossed in spicy seasoning, cooked to perfection, served hot.",
-    "calories": 240,
-    "price": 26,
-    "image": "https://i.ibb.co/9yc2Yyt/resize-1729380679139095096634375189233817028420841061398088129955476903n.jpg",
-    "popular": true
+    "id": 3,
+    "name": {
+      "en": "HOT & SOUR SOUP CHICKEN/PRAWN/FISH",
+      "ar": "شوربة حامضة حارة دجاج/جمبري/سمك"
+    },
+    "calories": 262,
+    "price": 17,
+    "description": {
+      "en": "Hot and sour soup with a choice of chicken, prawn, or fish.",
+      "ar": "شوربة حامضة وحارة مع اختيار دجاج أو جمبري أو سمك."
+    },
+    "category": {
+      "en": "Soups",
+      "ar": "الشوربات"
+    },
+    "image": "https://live.staticflickr.com/65535/54119070762_d45b9636c5.jpg"
   },
   {
-    "itemName": "Mutton Seekh Kabab",
-    "description": "Juicy mutton minced with spices, skewered and grilled to smoky perfection.",
-    "calories": 320,
-    "price": 35,
-    "image": "https://i.ibb.co/28Zr9sq/resize-1729380707309094643282848645214658934209037026226949504213124n.jpg",
-    "popular": true
+    "id": 4,
+    "name": {
+        "en": "Samundari Khazana",
+        "ar": "صندوخ بهرية"
+    },
+    "calories": 271,
+    "price": 17,
+    "description": {
+        "en": "",
+        "ar": ""
+    },
+    "category": {
+        "en": "Soups",
+        "ar": "الشوربات"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 5,
+  "name": {
+      "en": "Cream of Seafood",
+      "ar": "كريم من المأكولات البحرية"
+  },
+  "calories": 255,
+  "price": 17,
+  "description": {
+      "en": "Creamy seafood soup with shrimp and fish",
+      "ar": "شوربة كريمية منوعة من المأكولات البحرية مع الجمبري والسمك"
+  },
+  "category": {
+      "en": "Soups",
+      "ar": "الشوربات"
+  },
+  "image": "https://live.staticflickr.com/65535/54120198273_db52a39458_z.jpg"
+},
+{
+"id": 6,
+"name": {
+    "en": "Vegetable Soup",
+    "ar": "شوربة خضار"
+},
+"calories": 222,
+"price": 15,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://live.staticflickr.com/65535/54120198263_b7af893dff.jpg"
+},
+{
+"id": 7,
+"name": {
+    "en": "Mutton Soup",
+    "ar": "شوربة اللحمه"
+},
+"calories": 223,
+"price": 16,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 8,
+"name": {
+    "en": "Mushroom Soup",
+    "ar": "شوربة الفطر"
+},
+"calories": 222,
+"price": 15,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://live.staticflickr.com/65535/54120260254_074200e127.jpg"
+},
+{
+"id": 9,
+"name": {
+    "en": "Tomato Soup",
+    "ar": "شوربة طماطم"
+},
+"calories": 246,
+"price": 15,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 10,
+"name": {
+    "en": "Cream Soup",
+    "ar": "شوربة الكريمة"
+},
+"calories": 266,
+"price": 15,
+"description": {
+    "en": "Creamy soup with options of chicken, mutton, vegetables, corn, or mushroom",
+    "ar": "شوربة كريمية مع خيارات الدجاج، اللحم، الخضار، الذرة أو الفطر"
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://live.staticflickr.com/65535/54120198263_b7af893dff.jpg"
+},
+{
+"id": 11,
+"name": {
+    "en": "Lentil Soup",
+    "ar": "شوربة عدس"
+},
+"calories": 287,
+"price": 15,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Soups",
+    "ar": "الشوربات"
+},
+"image": "https://live.staticflickr.com/65535/54120381830_29b07ef9f7.jpg"
+},
+  
+  {
+      "id": 12,
+      "name": {
+        "en": "ARABIAN SALAD",
+        "ar": "سلطة العربية"
+      },
+      "calories": 589,
+      "price": 22,
+      "description": {
+        "en": "A delightful mix of Hummus, Mutabbal, stuffed grape leaves, and Fattosh salad.",
+        "ar": "مزيج لذيذ من الحمص، المتبل، ورق العنب المحشي، وسلطة الفتوش."
+      },
+      "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+      },
+      "image": "https://live.staticflickr.com/65535/54120190598_754b35fd31.jpg"
+    },
+    {
+      "id": 13,
+      "name": {
+        "en": "RAITA",
+        "ar": "سلطة زبادي"
+      },
+      "calories": 122,
+      "price": 10,
+      "description": {
+        "en": "Beaten yoghurt served with your choice of potato, cucumber, onion, tomato, or mixed.",
+        "ar": "زبادي مخفوق يقدم مع اختيارك من البطاطا، الخيار، البصل، الطماطم، أو مزيج."
+      },
+      "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+      },
+      "image": "https://live.staticflickr.com/65535/54120190588_6a0cc5d524.jpg"
+    },
+    {
+      "id": 14,
+      "name": {
+        "en": "KACHUMBER SALAD",
+        "ar": "سلطة كشومبر"
+      },
+      "calories": 69,
+      "price": 17,
+      "description": {
+        "en": "A fresh salad of chopped vegetables seasoned with salt and pepper.",
+        "ar": "سلطة طازجة من الخضار المقطعة مضاف إليها الملح والفلفل."
+      },
+      "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+      },
+      "image": "https://live.staticflickr.com/65535/54120374315_f2aab9717b.jpg"
+    },
+    {
+      "id": 15,
+      "name": {
+          "en": "Fresh Seasonal Salad",
+          "ar": "سلطة طازجة وموسمية"
+      },
+      "calories": 64,
+      "price": 12,
+      "description": {
+          "en": "Sliced seasonal fresh vegetable salad",
+          "ar": "سلطة خضار موسمية طازجة مقطعة"
+      },
+      "category": {
+          "en": "Salads",
+          "ar": "سلطة"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
   },
   {
-    "itemName": "King Fish Tandoori",
-    "description": "King fish marinated in tandoori spices, grilled to perfection in a traditional tandoor.",
-    "calories": 300,
-    "price": 58,
-    "image": "https://i.ibb.co/41g6rp7/resize-17293806027332909303597428046633540991476645276297066397259773n.jpg",
-    "popular": true
+      "id": 16,
+      "name": {
+          "en": "Russian Salad",
+          "ar": "سلطة روسية"
+      },
+      "calories": 388,
+      "price": 22,
+      "description": {
+          "en": "Mixed with mayonnaise, cream, pineapple, carrot, cucumber, and apple",
+          "ar": "سلطة مكونة من المايونيز، الكريم، الأناناس، الجزر، الخيار، والتفاح"
+      },
+      "category": {
+          "en": "Salads",
+          "ar": "سلطة"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    
   },
   {
-    "itemName": "Chakan Dum Biryani",
-    "description": "Aromatic biryani rice cooked with tender chicken, layered with spices and herbs.",
-    "calories": 450,
-    "price": 38,
-    "image": "https://i.ibb.co/8bFdTc6/resize-17293806523090049913542664706487488239415254035516519260044997n.jpg",
-    "popular": true
+      "id": 17,
+      "name": {
+          "en": "Chicken Pineapple Salad",
+          "ar": "سلطة الأناناس والدجاج"
+      },
+      "calories": 322,
+      "price": 22,
+      "description": {
+          "en": "Sliced chicken with marinated pineapple, cream, and mayonnaise",
+          "ar": "دجاج شرائح مع أناناس منقع بالكريمة والمايونيز"
+      },
+      "category": {
+          "en": "Salads",
+          "ar": "سلطة"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
   },
   {
-    "itemName": "Mojito Strawberry",
-    "description": "Refreshing mojito with a burst of fresh strawberries, mint, and a zesty lime twist.",
-    "calories": 110,
-    "price": 22,
-    "image": "https://i.ibb.co/KD1tDHd/resize-172938075621026881452984340134404656714365097734293589635676649n.jpg",
-    "popular": true
+    "id": 18,
+    "name": {
+        "en": "Hummus / Mutabbal / Tabola / Fattosh",
+        "ar": "حمص / متبل / تبولة / فتوش"
+    },
+    "calories": "hummus: 873 / mutabbal: 718 / tabola: 209 / fattosh: 63",
+    "price": 14,
+    "description": {
+        "en": "",
+        "ar": ""
+    },
+    "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+    "id": 19,
+    "name": {
+        "en": "Baby Corn Salad",
+        "ar": "سلطة الذرة الصغيرة"
+    },
+    "calories": 295,
+    "price": 15,
+    "description": {
+        "en": "",
+        "ar": ""
+    },
+    "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+    },
+    "image": "https://live.staticflickr.com/65535/54120374310_85c82a38e9.jpg"
+},
+{
+    "id": 20,
+    "name": {
+        "en": "Waraq Aynab",
+        "ar": "ورق عنب"
+    },
+    "calories": 364,
+    "price": 14,
+    "description": {
+        "en": "",
+        "ar": ""
+    },
+    "category": {
+        "en": "Salads",
+        "ar": "سلطة"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+    {
+      "id": 21,
+      "name": {
+        "en": "SAMBOSA (CHICK/VEG/CHEESE) 4 PCS",
+        "ar": "سمبوسة ( دجاج / خضار/ جبن ) 4 قطع"
+      },
+      "calories": 974,
+      "price": 18,
+      "description": {
+        "en": "Crisp stuffed vegetable pyramid filled with baked potatoes, peas, and mild Indian spices.",
+        "ar": "سمبوسة على شكل هرمي بحشوة البطاطا والفاصوليا متبلة بالبهارات الهندية."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120268569_ddb60be982.jpg"
+    },
+    {
+      "id": 22,
+      "name": {
+        "en": "FRENCH FRIES",
+        "ar": "بطاطس مقلية"
+      },
+      "calories": 1633,
+      "price": 10,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120206338_21bdc1df8f.jpg"
+    },
+    {
+      "id": 23,
+      "name": {
+        "en": "CHILLI HONEY FRIES",
+        "ar": "بطاطس عسل الفلفل الحار"
+      },
+      "calories": 1722,
+      "price": 19,
+      "description": {
+        "en": "Crispy deep-fried potatoes with honey and chilli.",
+        "ar": "أصابع البطاطس المقلية مغطاة بالعسل والفلفل."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 24,
+      "name": {
+        "en": "SPRING ROLL (CHICK/VEG) 3 PCS",
+        "ar": "لفة الربيع ( دجاج / خضار ) 3 قطع"
+      },
+      "calories": 705,
+      "price": 19,
+      "description": {
+        "en": "Made by wrapping an assortment of vegetables or cooked chicken with mild spices in a pastry and deep fried.",
+        "ar": "لفائف من الفطائر بحشوة الخضار / الدجاج متبلة بالبهارات الهندية الشهية."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54119079302_48ec73f6e6.jpg"
+    },
+    {
+      "id": 25,
+      "name": {
+        "en": "PRAWN SPRING ROLL (3 PCS)",
+        "ar": "الجمبري لفة الربيع ( 3 قطع )"
+      },
+      "calories": 705,
+      "price": 22,
+      "description": {
+        "en": "Pastry wrapped cooked prawns with mild spices and deep-fried.",
+        "ar": "لفائف الفطائر المحشية بالجمبري والمطبوخ بالبهارات الهندية الشهية."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54119079302_48ec73f6e6.jpg"
+    },
+    {
+      "id": 26,
+      "name": {
+        "en": "CHICKEN LOLIPOP",
+        "ar": "دجاج لولي بوب ( جوانح الدجاج ) المقرمش"
+      },
+      "calories": 1618,
+      "price": 29,
+      "description": {
+        "en": "Made from the middle/inner segments of chicken wings. Served with Szechuan sauce.",
+        "ar": "مصنوعة من الشرائح الوسطية والداخلية لأجنحة الدجاج متبلة ومغلفة بهارات تميل للحمرة ومقلية جيدا وتقدم مع صلصة تستشيوان."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120206278_dd4491f528.jpg"
+    },
+    {
+      "id": 27,
+      "name": {
+        "en": "GOLDEN PRAWN (5 Pieces)",
+        "ar": "جمبري الذهبي ( 5 قطع )"
+      },
+      "calories": 1169,
+      "price": 49,
+      "description": {
+        "en": "Fresh prawn marinated with Indian spices and deep-fried.",
+        "ar": "جمبري طازج ومتبل بالبهارات الهندية ومقلي جيدا."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120390400_894c4d7aa7.jpg"
+    },
+    {
+      "id": 28,
+      "name": {
+        "en": "FISH FINGER WITH CHIPS",
+        "ar": "إصبع السمك مع البطاطا"
+      },
+      "calories": 763,
+      "price": 38,
+      "description": {
+        "en": "Battered fish deep-fried and served with chips.",
+        "ar": "أصابع السمك المتبلة المقلية تقدم مع شرائح البطاطا."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120268659_94e30651d8.jpg"
+    },
+    {
+      "id": 29,
+      "name": {
+        "en": "CHICKEN 65",
+        "ar": "دجاج 65"
+      },
+      "calories": 203,
+      "price": 34,
+      "description": {
+        "en": "Boneless chicken pieces with yoghurt, green chilli, and Indian spices cooked with thickened sauce.",
+        "ar": "قطع دجاج بدون عظم مع الزبادي والفلفل الأخضر والبهارات الخاصة."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120268714_f34fb6271e.jpg"
+    },
+    {
+      "id": 30,
+      "name": {
+          "en": "ALOO TIKKI",
+          "ar": "بطاطس تكي"
+      },
+      "calories": 1147,
+      "price": 34,
+      "description": {
+          "en": "Homemade patty of potatoes with a touch of ginger and garlic",
+          "ar": "بطاطس مهروسة على شكل دائري متبلة بالثوم والزنجبيل"
+      },
+      "category": {
+          "en": "Appetizers",
+          "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120268604_25c6a23ef6.jpg"
   },
   {
-    "itemName": "Gulab Jamun",
-    "description": "Soft milk-based dumplings soaked in sugar syrup, a classic Indian dessert delight.",
-    "calories": 300,
-    "price": 18,
-    "image": "https://i.ibb.co/xXQCcgL/resize-17293806198921171773556939036508965537267525692942197872918886n.jpg",
-    "popular": true
-  }
+    "id": 31,
+    "name": {
+        "en": "SESAME CHICKEN",
+        "ar": "دجاج بالسمسم"
+    },
+    "calories": 370,
+    "price": 29,
+    "description": {
+        "en": "",
+        "ar": ""
+    },
+    "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+    {
+      "id": 32,
+      "name": {
+        "en": "MALAI CHICKEN TIKKA 4 Pcs.",
+        "ar": "دجاج تكا بالكريم ( 4 قطع )"
+      },
+      "calories": 459,
+      "price": 18,
+      "description": {
+        "en": "Chicken cubes marinated with yoghurt and cream with mild Indian spice.",
+        "ar": "مكعبات الدجاج المتبلة مع الزبادي والكريم والبهارات الهندية المتوسطة."
+      },
+      "category": {
+        "en": "Kids Meal",
+        "ar": "وجبة اطفال"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 33,
+      "name": {
+        "en": "KALMI KABAB 2 PCS",
+        "ar": "كباب العصاء ( 2 قطع )"
+      },
+      "calories": 415,
+      "price": 20,
+      "description": {
+        "en": "Chicken drumstick marinated in Indian spices cooked in clay oven.",
+        "ar": "أفخاذ الدجاج الشهية والمتبلة في البهارات الهندية والمطبوخ في فرن الطين."
+      },
+      "category": {
+        "en": "Kids Meal",
+        "ar": "وجبة اطفال"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 34,
+      "name": {
+        "en": "FINGER FISH 4 PCS",
+        "ar": "إصبع السمك ( 4 قطع )"
+      },
+      "calories": 563,
+      "price": 22,
+      "description": {
+        "en": "Fried Hamour fish with bread corn.",
+        "ar": "سمك هامور المقلي بخبز الذرة."
+      },
+      "category": {
+        "en": "Kids Meal",
+        "ar": "وجبة اطفال"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 35,
+      "name": {
+          "en": "TIL PRAWN 3 PCS",
+          "ar": "الجمبري سمسم (٣ قطع)"
+      },
+      "calories": 1397,
+      "price": 36,
+      "description": {
+          "en": "King prawn with sesame, mild spice, and fried",
+          "ar": "جمبري ملكي متبل بالسمسم ومقلي"
+      },
+      "category": {
+        "en": "Kids Meal",
+        "ar": "وجبة اطفال"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+  },
+    {
+      "id": 36,
+      "name": {
+        "en": "CHICKEN TIKKA",
+        "ar": "دجاج تكا"
+      },
+      "calories": 977,
+      "price": 34,
+      "description": {
+        "en": "Tender pieces of boneless chicken marinated in aromatic spices and yoghurt, flame broiled on skewers in our clay oven.",
+        "ar": "قطع طرية من الدجاج منزوعة العظام ومتبلة بنكهات البهارات الهندية والزبادي والمشوية علي لهب الأشباش في فرن الطين."
+      },
+      "category": {
+        "en": "Chicken Tandoor",
+        "ar": "دجاج تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54122238335_fe3c5e40e3.jpg"
+    },
+    {
+      "id": 37,
+      "name": {
+        "en": "MURGH TANDOORI (Half & Full)",
+        "ar": "دجاج مشوي - حبة / نصف"
+      },
+      "calories": "1351/2551 Cal",
+      "price": "31/49",
+      "description": {
+        "en": "Delicately seasoned in exceptional spices, yoghurt, and baked in tandoor to enhance its subtle flavor.",
+        "ar": "دجاج متبل و مبهر بالبهارات الخاصة مع زبادي مخبوز في الفرن."
+      },
+      "category": {
+        "en": "Chicken Tandoor",
+        "ar": "دجاج تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54122246600_ba5bb29781.jpg"
+    },
+    {
+      "id": 38,
+      "name": {
+        "en": "MALAI CHICKEN TIKKA",
+        "ar": "دجاج كريم تكا"
+      },
+      "calories": 1255,
+      "price": 31,
+      "description": {
+        "en": "Chicken cubes marinated with yoghurt and cream with mild Indian spice.",
+        "ar": "مكعبات دجاج متبلة في زبادي وكريم مع البهارات الهندية متوسطة."
+      },
+      "category": {
+        "en": "Chicken Tandoor",
+        "ar": "دجاج تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54122054503_ae79ce56bc.jpg"
+    },
+    {
+      "id": 39,
+      "name": {
+        "en": "KALMI KABAB",
+        "ar": "كباب كلمي دجاج"
+      },
+      "calories": 1047,
+      "price": 34,
+      "description": {
+        "en": "Chicken drumstick marinated with turmeric powder & Indian spices, cooked in clay oven.",
+        "ar": "أفخاذ الدجاج الشهية والمتبلة في البهارات الهندية مطبوخة في فرن الطين."
+      },
+      "category": {
+       "en": "Chicken Tandoor",
+        "ar": "دجاج تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54120940852_2068549049.jpg"
+    },
+    {
+      "id": 40,
+      "name": {
+          "en": "LAHSOONI KABAB",
+          "ar": "كباب بالثوم"
+      },
+      "calories": 977,
+      "price": 36,
+      "description": {
+          "en": "Boneless chicken pieces marinated with garlic and yogurt paste.",
+          "ar": "قطع دجاج بدون عظم متبلة بالثوم والزبادي."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54120932752_6f64767404_z.jpg"
+  },
+  {
+      "id": 41,
+      "name": {
+          "en": "MURGH ZAFRANI KABAB",
+          "ar": "دجاج زعفراني كباب"
+      },
+      "calories": 912,
+      "price": 33,
+      "description": {
+          "en": "Boneless chicken pieces marinated with herbal spices & saffron.",
+          "ar": "قطع دجاج بدون عظم متبلة بالبهارات العشبية والزعفران."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+  },
+  {
+      "id": 42,
+      "name": {
+          "en": "TANGRI KULFI",
+          "ar": "دجاج كلفي"
+      },
+      "calories": 1236,
+      "price": 36,
+      "description": {
+          "en": "Chicken marinated with mild Indian spices, cooked in a clay oven and wrapped like kulfi.",
+          "ar": "دجاج متبل مع بهارات هندية متوسطة."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+  },
+  {
+      "id": 43,
+      "name": {
+          "en": "CHICKEN BIHARI KABAB",
+          "ar": "دجاج بيهاري كباب"
+      },
+      "calories": 857,
+      "price": 35,
+      "description": {
+          "en": "Flat chicken marinated in special Indian hot spices, cooked in a clay oven.",
+          "ar": "دجاج متبل بالبهارات الهندية الحارة الخاصة، مطبوخ في الفرن."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+  },
+  {
+      "id": 44,
+      "name": {
+          "en": "MURGH RESHAMI KABAB",
+          "ar": "دجاج ريشمي كباب"
+      },
+      "calories": 950,
+      "price": 31,
+      "description": {
+          "en": "Boneless chicken pieces marinated with Indian sauce & egg coating, cooked in a clay oven.",
+          "ar": "قطع دجاج بدون عظم متبلة بالبهارات الهندية ومغلقة بالبيض."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+  },
+  {
+      "id": 45,
+      "name": {
+          "en": "CHICKEN SEEKH KABAB",
+          "ar": "سيخ كباب دجاج"
+      },
+      "calories": 544,
+      "price": 35,
+      "description": {
+          "en": "Finely minced lamb finger rolls seasoned with exotic herbs and spices, cooked in a clay oven.",
+          "ar": "دجاج الضأن مفروم فرم دقيق في شكل أصابع ومتبلة بالأعشاب."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+     "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+  },
+  {
+      "id": 46,
+      "name": {
+          "en": "CHICKEN CHUZA",
+          "ar": "دجاج شورا"
+      },
+      "calories": 1281,
+      "price": 34,
+      "description": {
+          "en": "Chicken pieces with green chili and Indian spices, cooked in a clay oven.",
+          "ar": "قطع دجاج مع الفلفل الأخضر والبهارات الهندية."
+      },
+      "category": {
+          "en": "Chicken Tandoor",
+          "ar": "دجاج تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+  },
+  {
+    "id": 47,
+    "name": {
+      "en": "MIX GRILL",
+      "ar": "مشويات مشكلة"
+    },
+    "calories": 1472,
+    "price": 53,
+    "description": {
+      "en": "Chicken, mutton, and fish assorted grill.",
+      "ar": "الدجاج/ لحم خروف/ السمك."
+    },
+    "category": {
+    "en": "Chicken Tandoor",
+      "ar": "دجاج تندوري"
+    },
+    "image": "https://live.staticflickr.com/65535/54122054353_6a594cbd4e.jpg"
+  },
+    {
+      "id": 48,
+      "name": {
+        "en": "JHINGA LAHSOONI",
+        "ar": "الربيان بالثوم"
+      },
+      "calories": 1083,
+      "price": 56,
+      "description": {
+        "en": "King prawn marinated with hot Indian spices cooked in clay oven.",
+        "ar": "ملك الربيان مقطع مع الفلفل حار والبهارات الهندية مطبوخ في الفرن."
+      },
+      "category": {
+        "en": "Seafood Tandoor",
+          "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    
+    {
+      "id": 49,
+      "name": {
+        "en": "FISH TIKKA",
+        "ar": "سمك تكا"
+      },
+      "calories": 854,
+      "price": 51,
+      "description": {
+        "en": "Hamour fish cubes marinated with yoghurt and chef's secret spices.",
+        "ar": "مكعبات سمك الهامور متبلة بالزبادي والبهارات سررئيس الطهاة."
+      },
+      "category": {
+        "en": "Seafood Tandoor",
+          "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://live.staticflickr.com/65535/54122252835_fa74393053.jpg"
+    },
+    {
+      "id": 50,
+      "name": {
+        "en": "KING PRAWN TANDOORI",
+        "ar": "ملك الروبيان المشوي"
+      },
+      "calories": 1412,
+      "price": 59,
+      "description": {
+        "en": "King prawn marinated in spiced live-culture yoghurt, spices, and slow baked.",
+        "ar": "ملك الجمبري متبل في زبادي خاص والبهارات مطبوخ على النار الهادئة."
+      },
+      "category": {
+        "en": "Seafood Tandoor",
+          "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://live.staticflickr.com/65535/54122119549_bab07a6501_z.jpg"
+    },
+    {
+      "id": 51,
+      "name": {
+        "en": "KING FISH TANDOORI",
+        "ar": "ملك السمك المشوي"
+      },
+      "calories": 1702,
+      "price": 58,
+      "description": {
+        "en": "Fish Hamour with green chilly & Indian spices cooked with thick sauce.",
+        "ar": "سمك هامور مفلطح متبل مع البهارات موغلاي الحارة مطبوخ في الفرن الطين."
+      },
+      "category": {
+       "en": "Seafood Tandoor",
+          "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://live.staticflickr.com/65535/54122119734_8574ac9fcf.jpg"
+    },
+    {
+      "id": 52,
+      "name": {
+        "en": "MIX GRILL SEA FOOD",
+        "ar": "مشكلة شواء المأكولات البحرية"
+      },
+      "calories": 1268,
+      "price": 72,
+      "description": {
+        "en": "Mixed grill of fish and prawn",
+        "ar": "السمك / الجمبري"
+      },
+      "category": {
+        "en": "Seafood Tandoor",
+        "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 53,
+      "name": {
+        "en": "SHRIMP 65",
+        "ar": "الربيان 65"
+      },
+      "calories": 187,
+      "price": 52,
+      "description": {
+        "en": "Prawn with green chilly & Indian spices cooked with thick sauce.",
+        "ar": "جمبري مع فلفل اخضر والبهارات الهندية مطبوخ مع طبقة سمكية من الصلصة."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54119930666_fc6fff23ec_z.jpg"
+    },
+    {
+      "id": 54,
+      "name": {
+        "en": "LOBSTER TANDOORI",
+        "ar": "سرطان البحر المشوي"
+      },
+      "calories": 1864,
+      "price": 114,
+      "description": {
+        "en": "Seasonal lobster marinated with mild Indian spices.",
+        "ar": "استاكوزا الموسمي متبلة مع البهارات الهندية متوسطة."
+      },
+      "category": {
+         "en": "Seafood Tandoor",
+          "ar": "تندوري المأكولات البحرية"
+      },
+      "image": "https://live.staticflickr.com/65535/54122054338_1d57117edf.jpg"
+    },
+    {
+      "id": 55,
+      "name": {
+        "en": "MATCHLI / JHINGA KOLIWADA",
+        "ar": "السمك/الربيان كوليوارة"
+      },
+      "calories": "1261/1323 Cal",
+      "price": "44/58",
+      "description": {
+        "en": "Fish/King prawn marinated with Indian spices and deep fried.",
+        "ar": "سمك /ملك الجمبري متبل مع البهارات الهندية ومقلية جيداً."
+      },
+      "category": {
+        "en": "Appetizers",
+        "ar": "المقبلات"
+      },
+      "image": "https://live.staticflickr.com/65535/54120206398_b0cbc41b7e.jpg"
+    },
+    {
+      "id": 56,
+      "name": {
+        "en": "MUTTON SEEKH KABAB",
+        "ar": "كباب أصابع لحم مفروم"
+      },
+      "calories": 544,
+      "price": 35,
+      "description": {
+        "en": "Finely minced finger rolls of lamb seasoned with exotic herbs and spices cooked in clay oven.",
+        "ar": "لحم الضان مفروم فرم دقيق في شكل أصابع ومتبلة بالعشاب، ومطبوخة في فرن الطين."
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54122258435_743cabd17a_z.jpg"
+    },
+    {
+      "id": 57,
+      "name": {
+        "en": "MUTTON BOTI",
+        "ar": "لحم اوصال"
+      },
+      "calories": 1124,
+      "price": 35,
+      "description": {
+        "en": "Boneless mutton cubes marinated with yoghurt and spices, cooked in a clay oven",
+        "ar": "مكعبات لحم الضأن المتبلة مع كريم الزبادي والبهارات الهندية"
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 58,
+      "name": {
+        "en": "MUTTON AFGANI BOTI",
+        "ar": "لحم اوصال الأفغاني"
+      },
+      "calories": 916,
+      "price": 40,
+      "description": {
+        "en": "Mutton cubes marinated with yoghurt, cream, and cashew nut paste with mild Indian spices",
+        "ar": "مكعبات لحم الضأن المتبلة مع معجون الكاجو"
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+      "image": "https://live.staticflickr.com/65535/54122260475_4b99e9942b.jpg"
+    },
+    {
+      "id": 59,
+      "name": {
+        "en": "MUTTON BANJARA",
+        "ar": "لحم بنجارة"
+      },
+      "calories": 901,
+      "price": 43,
+      "description": {
+        "en": "Boneless mutton pieces marinated with coriander, mint, and green chili paste",
+        "ar": "قطع لحم الضأن بدون عظم متبلة بالكزبرة والنعناع ومعجون فلفل الأخضر"
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 60,
+      "name": {
+        "en": "MUTTON CHOPS",
+        "ar": "القطع لحم الضأن"
+      },
+      "calories": 1472,
+      "price": 47,
+      "description": {
+        "en": "Lamb chops marinated with Indian spices and cooked in a clay oven",
+        "ar": "لحم الخروف الضأن المتبل بالبهارات الهندية"
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 61,
+      "name": {
+        "en": "VALLEY SPECIAL",
+        "ar": "مخصوص الوادي الهندي"
+      },
+      "calories": 1268,
+      "price": 55,
+      "description": {
+        "en": "Mixed grill platter of assorted meats",
+        "ar": "مشاوي لحم مشكلة"
+      },
+      "category": {
+        "en": "Mutton Tandoor",
+        "ar": "لحم تندوري"
+      },
+     "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 62,
+      "name": {
+        "en": "CHICKEN DUM BIRYANI",
+        "ar": "الدجاج رز برياني ( فخار )"
+      },
+      "calories": 1571,
+      "price": 38,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+      "id": 63,
+      "name": {
+        "en": "MUTTON DUM BIRYANI",
+        "ar": "اللحم رز برياني ( فخار )"
+      },
+      "calories": 1251,
+      "price": 42,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+     "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+      "id": 64,
+      "name": {
+        "en": "PRAWN DUM BIRYANI",
+        "ar": "الربيان رز برياني ( فخار )"
+      },
+      "calories": 1104,
+      "price": 56,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+       "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+      "id": 65,
+      "name": {
+        "en": "FISH DUM BIRYANI",
+        "ar": "السمك رز برياني ( فخار )"
+      },
+      "calories": 1229,
+      "price": 56,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+       "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+      "id": 66,
+      "name": {
+        "en": "VEGETABLE DUM BIRYANI",
+        "ar": "الخضروات رز برياني ( فخار )"
+      },
+      "calories": 960,
+      "price": 33,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+       "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+      "id": 67,
+      "name": {
+        "en": "MIX DUM BIRYANI",
+        "ar": "مشكل رز ( فخار )"
+      },
+      "calories": 1427,
+      "price": 72,
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "category": {
+        "en": "Chef Ka Dum",
+        "ar": "الخاص سهر الطباخ"
+      },
+      "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+    },
+    {
+  "id": 68,
+  "name": {
+    "en": "VEGETABLE DUM HANDI",
+    "ar": "خضار دم هاندي (فخار)"
+  },
+  "calories": 674,
+  "price": 26,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Chef Ka Dum",
+    "ar": "الخاص سهر الطباخ"
+  },
+  "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+},
+{
+  "id": 69,
+  "name": {
+    "en": "MURGH DUM HANDI",
+    "ar": "الدجاج دم هاندي (فخار)"
+  },
+  "calories": 1254,
+  "price": 45,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Chef Ka Dum",
+    "ar": "الخاص سهر الطباخ"
+  },
+  "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+},
+{
+  "id": 70,
+  "name": {
+    "en": "MUTTON DUM HANDI",
+    "ar": "لحم دم هاندي (فخار)"
+  },
+  "calories": 1002,
+  "price": 47,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Chef Ka Dum",
+    "ar": "الخاص سهر الطباخ"
+  },
+  "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+},
+{
+  "id": 71,
+  "name": {
+    "en": "PRAWN DUM HANDI",
+    "ar": "الربيان دم هاندي (فخار)"
+  },
+  "calories": 787,
+  "price": 63,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Chef Ka Dum",
+    "ar": "الخاص سهر الطباخ"
+  },
+  "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+},
+{
+  "id": 72,
+  "name": {
+    "en": "FISH DUM HANDI",
+    "ar": "سمك دم هاندي (فخار)"
+  },
+  "calories": 1025,
+  "price": 53,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Chef Ka Dum",
+    "ar": "الخاص سهر الطباخ"
+  },
+  "image": "https://i.ibb.co/G7kMv91/Chicken-Dum-Biryani.jpg"
+},
+    {
+      "id": 73,
+      "name": {
+        "en": "CHICKEN TIKKA MASALA",
+        "ar": "دجاج تكا مسالة"
+      },
+      "calories": 1318,
+      "price": 41,
+      "description": {
+        "en": "Tender Barbeque Chicken Cooked In Creamy Sauce With Fresh Tomatoes And Oriental Spices.",
+        "ar": "قطع دجاج طرية متبلة ومطبوخة في الصلصة الكريم مع الطماطم الطازجة و البهارات الشرقية."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://live.staticflickr.com/65535/54122268265_0484b4f031.jpg"
+    },
+    {
+      "id": 74,
+      "name": {
+        "en": "MURGH MAKHANI (Butter chicken)",
+        "ar": "دجاج المكاني ( دجاج مع الزبدة )"
+      },
+      "calories": 1441,
+      "price": 39,
+      "description": {
+        "en": "Boneless Pieces Of Chicken Cooked In Butter, Coriander, Tomato sauce.",
+        "ar": "قطع دجاج بدون عظم مطبوخة في الزبدة مع الكزيرة والطماطم والزنجبيل."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://live.staticflickr.com/65535/54122084473_9bff1d8537.jpg"
+    },
+    {
+      "id": 75,
+      "name": {
+        "en": "Chicken Curry",
+        "ar": "دجاج كاري"
+      },
+      "calories": 1324,
+      "price": 40,
+      "description": {
+        "en": "A flavorful chicken curry cooked with a blend of spices.",
+        "ar": "كاري دجاج لذيذ مطبوخ بمزيج من التوابل."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 76,
+      "name": {
+        "en": "CHICKEN JALFERZI",
+        "ar": "دجاج جلفريزي"
+      },
+      "calories": 1064,
+      "price": 40,
+      "description": {
+        "en": "Boneless Chicken Cooked Capsicum, Tomato, Onion And Indian Spices.",
+        "ar": "دجاج بدون عظم مطبوخ مع الفلفل الحلو والطماطم والبصل والبهارات الهندية."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 77,
+      "name": {
+        "en": "CHICKEN CHILLY VEGETABLE",
+        "ar": "دجاج الفلفل و الخضار"
+      },
+      "calories": 1365,
+      "price": 44,
+      "description": {
+        "en": "Sliced Chicken Cooked Capsicum, Green Chilly With Thick Sauce.",
+        "ar": "شرائح الدجاج مع الفلفل الحلو والفلفل الأخضر وطبقة سميكة من الصلصة."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 78,
+      "name": {
+          "en": "CHICKEN CHILLY DRY (INDO-CHINESE)",
+          "ar": "دجاج الفلفل حار الجافة"
+      },
+      "calories": 922,
+      "price": 43,
+      "description": {
+          "en": "Chicken slices cooked with green chilly, black hot pepper, and soy sauce.",
+          "ar": "شرائح دجاج مطبوخ مع الفلفل الأخضر والفلفل الأسود الحار وصلصة الصويا"
+      },
+      "category": {
+          "en": "Chicken Delight",
+          "ar": "فرحة الدجاج"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+  },
+    {
+      "id": 79,
+      "name": {
+        "en": "CHICKEN MANCHURIAN",
+        "ar": "دجاج المنشورين"
+      },
+      "calories": 1323,
+      "price": 42,
+      "description": {
+        "en": "Chicken Cubes Cooked With Hot, Sweet And Sour Sauce Indo Chinese style.",
+        "ar": "مكعبات الدجاج مطبوخة بطريقة الصينية مع الصلصة الحارة والحلو بل مرة."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 80,
+      "name": {
+        "en": "SWEET & SOUR CHICKEN",
+        "ar": "دجاج الحلو والحامض"
+      },
+      "calories": 1343,
+      "price": 43,
+      "description": {
+        "en": "Chicken Cube Cooked With Vegetables, Sweet And Sour Indo Chinese Style.",
+        "ar": "مكعبات الدجاج مطبوخة بطريقة الصينية مع الخضار والصلصة الحلو بل مرة."
+      },
+      "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 81,
+      "name": {
+          "en": "INDIAN VALLEY CHEF SPECIAL",
+          "ar": "الوادي الهند خاص رئيس الطباخين"
+      },
+      "calories": 1434,
+      "price": 41,
+      "description": {
+          "en": "A typical North Indian home-style boneless chicken curry in a mild sauce blended with selected herbs & spices cooked with capsicum, tomato, onion, and spices.",
+          "ar": "إنها نفس طريقة الطبخ المنزلي للدجاج بدون عظم في الشمال الهند والتي تكون بخليط من الصلصة مع أعشاب البهارات مختارة مطبوخ مع الفلفل الحلو والطماطم والبصل والبهارات"
+      },
+      "category": {
+          "en": "Chicken Delight",
+          "ar": "فرحة الدجاج"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+  },
+  {
+    "id": 82,
+    "name": {
+        "en": "MURGH MUMTAZ",
+        "ar": "دجاج ممتاز"
+    },
+    "calories": 1456,
+    "price": 42,
+    "description": {
+        "en": "Chicken breast cubes cooked with nuts, butter, and creamy thick sauce with mild Indian spice.",
+        "ar": "مكعبات الدجاج مطبوخة مع المكسرات والزبدة وطبقة سميكة من الصلصة الكريمية مع البهارات الهندية متوسطة"
+    },
+    "category": {
+        "en": "Chicken Delight",
+        "ar": "فرحة الدجاج"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 83,
+  "name": {
+      "en": "CHICKEN DHABI",
+      "ar": "دجاج ذهبي"
+  },
+  "calories": 1056,
+  "price": 39,
+  "description": {
+      "en": "Chicken cube cooked with special gravy in oriental Indian style.",
+      "ar": "مكعب الدجاج مطبوخة مع الصلصة خاص معدة بواسطة كبير الطهاة"
+  },
+  "category": {
+      "en": "Chicken Delight",
+      "ar": "فرحة الدجاج"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 84,
+"name": {
+    "en": "CHICKEN TAWA MASALA",
+    "ar": "دجاج تاوا ماسالا"
+},
+"calories": 1064,
+"price": 44,
+"description": {
+    "en": "Tender barbeque chicken cooked in creamy sauce with fresh tomatoes and oriental spices.",
+    "ar": "قطع دجاج طرية متبلة ومطبوخة في الصلصة الكريمية مع الطماطم الطازجة والبهارات الشرقية"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 85,
+"name": {
+    "en": "CHICKEN RASEELA",
+    "ar": "دجاج سبانة"
+},
+"calories": 637,
+"price": 39,
+"description": {
+    "en": "Chicken boneless cooked with special spinach in a thick gravy with egg dressing.",
+    "ar": "دجاج بدون عظم مطبوخ مع خاصة ملوحية في صلصة عربي بالبيض"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 86,
+"name": {
+    "en": "CHICKEN WAH JI WAH",
+    "ar": "دجاج صلصة حلو"
+},
+"calories": 1395,
+"price": 47,
+"description": {
+    "en": "Boneless chicken cooked with nuts in milky gravy.",
+    "ar": "دجاج بدون عظم مطبوخ مع صلصة مكسرات البيضاء"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 87,
+"name": {
+    "en": "MURGH AFGHANI KORMA",
+    "ar": "دجاج افغاني قورمة"
+},
+"calories": 1324,
+"price": 44,
+"description": {
+    "en": "Chicken cubes cooked with yoghurt, cream, and cashew nut thick gravy in mild Indian spices.",
+    "ar": "مكعبات الدجاج مطبوخ مع الزبادي والكريم والمكسرات والبهارات الهندية"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 88,
+"name": {
+    "en": "CHICKEN DIL KHUSH",
+    "ar": "طبق الدجاج"
+},
+"calories": 1314,
+"price": 40,
+"description": {
+    "en": "Fresh chicken cooked with various spices, capsicum, tomato, and onion.",
+    "ar": "دجاج طازج مطبوخ مع الفلفل الحلو والطماطم والبصل والبهارات"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 89,
+"name": {
+    "en": "CHICKEN SHASLIK",
+    "ar": "دجاج شاسليك"
+},
+"calories": 994,
+"price": 40,
+"description": {
+    "en": "Sliced chicken cooked with tomato sauce.",
+    "ar": "شرائح الدجاج مطبوخ مع صلصة والطماطم"
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 90,
+"name": {
+    "en": "DYNAMITE CHICKEN",
+    "ar": "ديناميت دجاج"
+},
+"calories": 1874,
+"price": 44,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Chicken Delight",
+    "ar": "فرحة الدجاج"
+},
+"image": "https://live.staticflickr.com/65535/54120268664_6b20f7bfaf.jpg"
+},
+{
+"id": 91,
+"name": {
+    "en": "VEGETABLE CHOWMEIN",
+    "ar": "مكرونة الخضار"
+},
+"calories": 547,
+"price": 39,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Chow Mein",
+    "ar": "تشاو مين"
+},
+"image": "https://live.staticflickr.com/65535/54119090142_4e3b281ae3.jpg"
+},
+{
+"id": 92,
+"name": {
+    "en": "CHICKEN CHOWMEIN",
+    "ar": "مكرونة الدجاج"
+},
+"calories": 515,
+"price": 40,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Chow Mein",
+    "ar": "تشاو مين"
+},
+"image": "https://live.staticflickr.com/65535/54119090142_4e3b281ae3.jpg"
+},
+{
+"id": 93,
+"name": {
+    "en": "PRAWN CHOWMEIN",
+    "ar": "مكرونة الربيان"
+},
+"calories": 680,
+"price": 49,
+"description": {
+    "en": "",
+    "ar": ""
+},
+"category": {
+    "en": "Chow Mein",
+    "ar": "تشاو مين"
+},
+"image": "https://live.staticflickr.com/65535/54119090142_4e3b281ae3.jpg"
+},
+{
+"id": 94,
+"name": {
+    "en": "CHOWMEIN MIX",
+    "ar": "مكرونة المشكل"
+},
+"calories": 1280,
+"price": 59,
+"description": {
+    "en": "Vegetable/Chicken/Prawn",
+    "ar": "الخضار / الدجاج / الربيان"
+},
+"category": {
+    "en": "Chow Mein",
+    "ar": "تشاو مين"
+},
+"image": "https://live.staticflickr.com/65535/54119090142_4e3b281ae3.jpg"
+},
+    {
+      "id": 95,
+      "name": {
+        "en": "KADAHI GOSHT",
+        "ar": "لحم الخروف المقلي"
+      },
+      "calories": 956,
+      "price": 45,
+      "description": {
+        "en": "Boneless Mutton Cooked With Indian Spices Thick Sauce.",
+        "ar": "لحم ضأن بدون عظم مطبوخ مع البهارات الهندية مع صلصة سميكة."
+      },
+      "category": {
+      "en": "Mutton Delight",
+      "ar": "فرحة لحم الضأن"
+  },
+      "image": "https://live.staticflickr.com/65535/54121820656_a06864d6e3_n.jpg"
+    },
+    {
+      "id": 96,
+      "name": {
+        "en": "MUTTON MASALA",
+        "ar": "لحم مصالة"
+      },
+      "calories": 919,
+      "price": 45,
+      "description": {
+        "en": "Boneless Mutton Cooked with Indian Spices.",
+        "ar": "لحم ضأن مطبوخ بالبهارات الهندية."
+      },
+      "category": {
+      "en": "Mutton Delight",
+      "ar": "فرحة لحم الضأن"
+  },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 97,
+      "name": {
+        "en": "MUTTON CURRY",
+        "ar": "لحم كاري"
+      },
+      "calories": 892,
+      "price": 45,
+      "description": {
+        "en": "Boneless Mutton Cooked with special Indian spices.",
+        "ar": "لحم ضأن بدون عظم مطبوخ بالبهارات الهندية الخاصة."
+      },
+      "category": {
+      "en": "Mutton Delight",
+      "ar": "فرحة لحم الضأن"
+  },
+      "image": "https://live.staticflickr.com/65535/54122095033_017f53eef8_n.jpg"
+    },
+    {
+      "id": 98,
+      "name": {
+          "en": "GOSHT RARA",
+          "ar": "لحم الخروف رارا"
+      },
+      "calories": 1188,
+      "price": 41,
+      "description": {
+          "en": "Boneless mutton cooked with minced meat in oriental style.",
+          "ar": "لحم ضان مطبوخ مع لحمة مفروم على الطريقة شرقية"
+      },
+      "category": {
+          "en": "Mutton Delight",
+          "ar": "فرحة لحم الضأن"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+  },
+  {
+    "id": 99,
+    "name": {
+        "en": "MUTTON ROGHANJOSH",
+        "ar": "لحم الخروف روغنجوش"
+    },
+    "calories": 956,
+    "price": 43,
+    "description": {
+        "en": "Mutton cooked with Indian spices in oriental style.",
+        "ar": "لحم الضان المطبوخ مع البهارات الهندية مع الصلصة شرقية"
+    },
+    "category": {
+        "en": "Mutton Delight",
+        "ar": "فرحة لحم الضأن"
+    },
+    "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 100,
+  "name": {
+      "en": "MUTTON AFGANI QORMA",
+      "ar": "لحم افغاني قورمة"
+  },
+  "calories": 1368,
+  "price": 45,
+  "description": {
+      "en": "Mutton cubes cooked with yoghurt, cream, and green chili flavor.",
+      "ar": "مكعبات لحم الضان مطبوخ مع الزبادي والكريم ونكهة الفلفل الأخضر"
+  },
+  "category": {
+      "en": "Mutton Delight",
+      "ar": "فرحة لحم الضأن"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 101,
+"name": {
+    "en": "MUTTON GINGER",
+    "ar": "لحم الخروف مع الزنجبيل"
+},
+"calories": 892,
+"price": 45,
+"description": {
+    "en": "Boneless mutton cooked with ginger, Indian spices, and thick sauce.",
+    "ar": "لحم ضان بدون عظم مطبوخ مع الزنجبيل والبهارات الهندية ومع طبقة سميكة"
+},
+"category": {
+    "en": "Mutton Delight",
+    "ar": "فرحة لحم الضأن"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 102,
+"name": {
+    "en": "GOSHT BUTTER MASALA",
+    "ar": "لحم الزبدة مصالة"
+},
+"calories": 1205,
+"price": 45,
+"description": {
+    "en": "Boneless mutton cooked with makhani gravy.",
+    "ar": "لحم ضان بدون عظم مطبوخ بخلطة غنية بالزبدة"
+},
+"category": {
+    "en": "Mutton Delight",
+    "ar": "فرحة لحم الضأن"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 103,
+"name": {
+    "en": "LAL MAS",
+    "ar": "لحم الخروف الأحمر"
+},
+"calories": 945,
+"price": 45,
+"description": {
+    "en": "Fresh mutton cooked with Indian herbs in oriental style.",
+    "ar": "لحم ضان طازج مطبوخ مع الأعشاب الهندية على الطريقة الشرقية"
+},
+"category": {
+    "en": "Mutton Delight",
+    "ar": "فرحة لحم الضأن"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 104,
+"name": {
+    "en": "MUTTON MUGHLAI",
+    "ar": "لحم مغلاي"
+},
+"calories": 1095,
+"price": 43,
+"description": {
+    "en": "Mutton pieces cooked with traditional spices in Mughlai style.",
+    "ar": "قطع من لحم الضان المطبوخة مع البهارات التقليدية على طريقة مغلاي"
+},
+"category": {
+    "en": "Mutton Delight",
+    "ar": "فرحة لحم الضأن"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+    {
+      "id": 105,
+      "name": {
+        "en": "FISH TIKKA MASALA",
+        "ar": "سمك تكا مسالة"
+      },
+      "calories": 1181,
+      "price": 55,
+      "description": {
+        "en": "Barbeque Fish Cooked With Thick Gravy In Traditional Indian Style.",
+        "ar": "سمك مشوي مقدم في صلصة سميكة علي الطريقة الهندية التقليدية."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://live.staticflickr.com/65535/54122166029_8d657dc8d5_z.jpg"
+    },
+    {
+      "id": 106,
+      "name": {
+        "en": "SHRIMP CURRY",
+        "ar": "جمبري كاري"
+      },
+      "calories": 726,
+      "price": 53,
+      "description": {
+        "en": "Shrimp Cooked With Thin Gravy In Indian Style.",
+        "ar": "جمبري مطبوخ مع الصلصة خفيفة علي الطريقة الهندية."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 107,
+      "name": {
+        "en": "SHRIMP MASALA",
+        "ar": "جمبري مسالة"
+      },
+      "calories": 781,
+      "price": 55,
+      "description": {
+        "en": "Shrimp Cooked With Indian Herbal In Oriental Style.",
+        "ar": "جمبري مطبوخ مع العشاب الهندية علي الطريقة الشرقية."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://live.staticflickr.com/65535/54120979732_a05d923745.jpg"
+    },
+    {
+      "id": 108,
+      "name": {
+        "en": "BUTTER PEPPER GARLIC SHRIMP/FISH",
+        "ar": "جمبري / سمك مع زبدة الفلفل"
+      },
+      "calories": 1082,
+      "price": 66,
+      "description": {
+        "en": "Shrimp or Fish Cooked With Butter & Milky Gravy.",
+        "ar": "جمبري أو سمك مطبوخ مع الزبدة ومرق حليبي."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 109,
+      "name": {
+        "en": "LOBSTER MASALA",
+        "ar": "سرطان البحر مصالة"
+      },
+      "calories": 1127,
+      "price": 128,
+      "description": {
+        "en": "Seasonal Lobster Cooked In Oriental Style.",
+        "ar": "إستاكوزا موسمية مطبوخ علي الطريقة الشرقية."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 110,
+      "name": {
+        "en": "PRAWN MANCHURIAN",
+        "ar": "جمبري منشورين"
+      },
+      "calories": 1006,
+      "price": 59,
+      "description": {
+        "en": "Prawn Cooked With Hot Sweet And Sour Sauce Indo Chinese Style.",
+        "ar": "جمبري مطبوخ بطريقة إندو الصينية مع الصلصة الحارة والحلوة والمرة."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 111,
+      "name": {
+        "en": "DYNAMITE SHRIMP",
+        "ar": "روبيان ديناميت"
+      },
+      "calories": 1033,
+      "price": 55,
+      "description": {
+        "en": "Spicy and crispy shrimp served with a special sauce.",
+        "ar": "روبيان حار ومقرمش يقدم مع صلصة خاصة."
+      },
+      "category": {
+        "en": "Seafood Delight",
+      "ar": "فرحة المأكولات البحرية"
+    },
+      "image": "https://live.staticflickr.com/65535/54120206378_acd0eb76d5.jpg"
+      },
+      {
+        "id": 112,
+        "name": {
+          "en": "JHINGA KADAHI",
+          "ar": "جمبري المقلي"
+        },
+        "calories": 864,
+        "price": 60,
+        "description": {
+          "en": "Shrimp cooked with rich Indian spices.",
+          "ar": "جمبري مطبوخ مع الصلصة غنية بالبهارات الهندية."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+      },
+      {
+        "id": 113,
+        "name": {
+          "en": "SHRIMP BUTTER MASALA",
+          "ar": "جمبري زبدة مسالة"
+        },
+        "calories": 1043,
+        "price": 59,
+        "description": {
+          "en": "Boneless shrimp cooked in butter with coriander, tomatoes, and ginger.",
+          "ar": "قطع جمري بدون عظم مطبوخة في الزبدة مع الكزبرة والطماطم والزنجبيل."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+      },
+      {
+        "id": 114,
+        "name": {
+          "en": "SHRIMP TAWA MASALA",
+          "ar": "جمبري تاوا مسالة"
+        },
+        "calories": 1011,
+        "price": 66,
+        "description": {
+          "en": "Shrimp cooked with sweet green romeo pepper, tomatoes, onions, and Indian spices.",
+          "ar": "جمبري مطبوخ مع الفلفل أخضر روميو الحلو والطماطم والبصل والبهارات الهندية."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://live.staticflickr.com/65535/54122286185_0e8aa3d55e.jpg" 
+      },
+      {
+        "id": 115,
+        "name": {
+          "en": "PRAWN JALFREZI",
+          "ar": "جمبري جلفريزي"
+        },
+        "calories": 780,
+        "price": 56,
+        "description": {
+          "en": "Shrimp cooked with sweet pepper, tomatoes, onions, and Indian spices.",
+          "ar": "جمبري مطبوخ مع الفلفل الحلو والطماطم والبصل والبهارات الهندية."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+      },
+      {
+        "id": 116,
+        "name": {
+          "en": "SHRIMP CHILLI DRY",
+          "ar": "جمبري مع الفلفل الأخضر ناشف"
+        },
+        "calories": 970,
+        "price": 52,
+        "description": {
+          "en": "Shrimp cooked with green chili, black pepper, and soy sauce.",
+          "ar": "جمبري مطبوخ مع الفلفل الأخضر والفلفل الأسود الحار وصلصة الصويا."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+      },
+      {
+        "id": 117,
+        "name": {
+          "en": "PRAWN SHASHLIK",
+          "ar": "جمري شاسلك"
+        },
+        "calories": 1043,
+        "price": 59,
+        "description": {
+          "en": "Shrimp cooked with tomato sauce and served with basmati rice.",
+          "ar": "جمري مطبوخ مع صلصة الطماطم ومقدم مع الرز الباسمتي."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+      },
+      {
+        "id": 118,
+        "name": {
+          "en": "SHRIMP CHILLI VEGETABLE",
+          "ar": "جمبري الفلفل مع الخضار"
+        },
+        "calories": 1052,
+        "price": 54,
+        "description": {
+          "en": "Shrimp cooked with sweet pepper and green pepper with a thick layer of sauce.",
+          "ar": "جمبري مطبوخ مع الفلفل الحلو والفلفل الأخضر مع طبقة سميكة من الصلصة."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg" 
+      },
+      {
+        "id": 119,
+        "name": {
+          "en": "FISH WITH PINEAPPLE",
+          "ar": "سمك مع الأناناس"
+        },
+        "calories": 1186,
+        "price": 54,
+        "description": {
+          "en": "Grouper fish cooked with pineapple sauce in Chinese style.",
+          "ar": "سمك الهامور مطبوخ مع الصلصة الأناناس على الطريقة الصينية."
+        },
+        "category": {
+          "en": "Seafood Delight",
+          "ar": "فرحة المأكولات البحرية"
+        },
+        "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+      },
+    {
+      "id": 120,
+      "name": {
+        "en": "BAINGAN MASALA",
+        "ar": "بأذنجان مسالة"
+      },
+      "calories": 831,
+      "price": 31,
+      "description": {
+        "en": "Cooked With Chefs Mixtures Of Onion And Tomato With Spices.",
+        "ar": "بأذنجان مطبوخ بواسطة خلطة كبار الطهاه من البصل والطماطم مع البهارات."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/Xp9n3dG/Tawa-Baigan.jpg"
+    },
+    {
+      "id": 121,
+      "name": {
+        "en": "SPICY POTATOES",
+        "ar": "البطاطس الحارة"
+      },
+      "calories": 1277,
+      "price": 26,
+      "description": {
+        "en": "Potatoes Slice Tossed With Indian Hot Spices.",
+        "ar": "قطع البطاطس مع البهارات الهندية."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/vsmFgTM/Spicy-potato.jpg"
+    },
+    {
+      "id": 122,
+      "name": {
+        "en": "BHINDI MASALA",
+        "ar": "بامية مسالة"
+      },
+      "calories": 859,
+      "price": 31,
+      "description": {
+        "en": "Okra Cooked With Tomato, Onion Sauce.",
+        "ar": "بامية مطبوخة مع الصلصة الطماطم والبصل."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 123,
+      "name": {
+        "en": "PANEER BUTTER MASALA",
+        "ar": "الجبنة مع الزبدة مسالة"
+      },
+      "calories": 1607,
+      "price": 31,
+      "description": {
+        "en": "Cubes Of Cottage Cheese Cooked With Butter And Creamy Gravy.",
+        "ar": "مكعبات من جبنة مطبوخة مع الزيدة والصلصة الكريمة."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 124,
+      "name": {
+        "en": "SUBZI PANCH RATAN",
+        "ar": "خضار خمسة انوأع"
+      },
+      "calories": 700,
+      "price": 30,
+      "description": {
+        "en": "Fresh Seasonal Vegetables 5 Types With Mild Spices.",
+        "ar": "الخصروات الموسمية الطازجة الخمسة أنواع مع البهارات الحقيقة."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/9hz4mZq/sabji-panchratan.jpg"
+    },
+    {
+      "id":125,
+      "name": {
+        "en": "VEGETABLE MALAI KOFTA",
+        "ar": "كوفتة الخضار مع الكريم"
+      },
+      "calories": 1892,
+      "price": 31,
+      "description": {
+        "en": "Mashed Vegetable Bowl Cooked With Mali Gravy.",
+        "ar": "الخضار مهروسة مطبوخة مع الصلصة الزبادي."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 126,
+      "name": {
+        "en": "KASHMIRI DUM ALOO",
+        "ar": "كشميري البطاطس بلبخار"
+      },
+      "calories": 1483,
+      "price": 32,
+      "description": {
+        "en": "Potatoes Stuffed With Paneer And Vegetable Cooked In Oriental Thick Gravy.",
+        "ar": "البطاطس محشية بالجبن والخضار مطبوخة مع طبقة الصلصة ثقيلة."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 127,
+      "name": {
+        "en": "GOBHI CHILLI DRY",
+        "ar": "زهرة مع الفلفل ناشف"
+      },
+      "calories": 1030,
+      "price": 31,
+      "description": {
+        "en": "Cauli Flower Cooked With Corn And Indian Spices.",
+        "ar": "زهرة مطبوخ مع الفلفل الأخضر والفلفل الأسود الحارة مع الصلصة والصويا."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/5sLP8RJ/Chilly-Gobi.jpg"
+    },
+    {
+      "id": 128,
+      "name": {
+        "en": "DAL TADKA",
+        "ar": "عدس الأصفر"
+      },
+      "calories": 1757,
+      "price": 24,
+      "description": {
+        "en": "Yellow Lentil Cooked With Tomato Garnished With Traditional Tarkah.",
+        "ar": "العدس الأصفر مطبوخ مع الطماطم مزخرفة مع اليقلي تقليدية."
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+    },
+      "image": "https://i.ibb.co/gzfSg2z/Dal-tadka.jpg"
+    },
+    {
+      "id": 129,
+      "name": {
+        "en": "DAL MAKHANI",
+        "ar": "العدس الأسود"
+      },
+      "calories": 1880,
+      "price": 26,
+      "description": {
+        "en": "Black Lentil Cooked With Green Chilly, Black Hot Pepper With Soy Sauce",
+        "ar": "العدس الأسود مطبوخ بالطريقة الشرقية مع الزبدة"
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 130,
+      "name": {
+        "en": "HARA KHAZANA",
+        "ar": "سبانخ خزانا"
+      },
+      "calories": 838,
+      "price": 26,
+      "description": {
+        "en": "Fresh Spinach Cooked With Corn And Indian Spices",
+        "ar": "سبانخ طازج مع الذرة والبهارات الهندية"
+      },
+      "category": {
+        "en": "Vegetables",
+        "ar": "الخضروات"
+      },
+     "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"  
+    },
+    {
+      "id": 131,
+      "name": {
+        "en": "BIRYANI RICE",
+        "ar": "رز البرياني سادة"
+      },
+      "calories": 817,
+      "price": 20,
+      "description": {
+        "en": "Basmati Rice Cooked With Aromatic Seed, Saffron And Indian Spice",
+        "ar": "الرز باسمتي مطبوخ مع بذوق النكهة والزافران والبهار الهندي"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://live.staticflickr.com/65535/54122110288_3c45f4bd3b.jpg"
+    },
+    {
+      "id": 132,
+      "name": {
+        "en": "CHICKEN BIRYANI",
+        "ar": "دجاج البرياني"
+      },
+      "calories": 1384,
+      "price": 32,
+      "description": {
+        "en": "Aromatic Basmati Rice Cooked With Tender Pieces Of Chicken, Herbs And Spices",
+        "ar": "الراز برياني ذو نكهة مطبوخ مع قطع الدجاج الطرية بالأعشاب والبهارات"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://live.staticflickr.com/65535/54122110288_3c45f4bd3b.jpg"
+    },
+    {
+      "id": 133,
+      "name": {
+        "en": "VEGETABLE BIRYANI",
+        "ar": "خضار البرياني"
+      },
+      "calories": 792,
+      "price": 26,
+      "description": {
+        "en": "Aromatic Basmati Rice Cooked With Assorted Seasonal Vegetables, Herbs And Spices",
+        "ar": "الرز البرياني ذو نكهة مطبوخ مع خضروات موسمية متنوعة والأعشاب والبهارات"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 134,
+      "name": {
+        "en": "MUTTON BIRYANI",
+        "ar": "لحم البرياني"
+      },
+      "calories": 1051,
+      "price": 46,
+      "description": {
+        "en": "Aromatic Basmati Rice Cooked With Tender Pieces Of Lamb, Herbs And Spices",
+        "ar": "الرز البرياني ذو نكهة مطبوخ مع قطع لحم الضأن والأعشاب والبهارات"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://live.staticflickr.com/65535/54121835601_f835b05b8b.jpg"
+    },
+    {
+      "id": 135,
+      "name": {
+        "en": "FISH BIRYANI",
+        "ar": "سمك البرياني"
+      },
+      "calories": 1067,
+      "price": 36,
+      "description": {
+        "en": "Basmati Rice Cooked With Boneless Fish Hamour And Special Handpicked Indian Spices",
+        "ar": "الرز باسمتي مطبوخ مع السمك الهامور منزوع العظم والبهارات الطبيعية الخاصة تم قطافها باليد"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+  
+    {
+      "id": 136,
+      "name": {
+        "en": "SHRIMP BIRYANI",
+        "ar": "جمبري البرياني"
+      },
+      "calories": 942,
+      "price": 50,
+      "description": {
+        "en": "Aromatic Basmati Rice Cooked With Tender Pieces Of Shrimp, Herbs And Spices",
+        "ar": "الرز باسمتي مطبوخ بنكهة مع الجمبري الطري متبل بالأعشاب والبهارات"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 137,
+      "name": {
+        "en": "STEAM RICE",
+        "ar": "رز الابيض بالبخار"
+      },
+      "calories": 730,
+      "price": 14,
+      "description": {
+        "en": "Basmati Rice Steam.",
+        "ar": "الرز مطبوخ بالبخار."
+      },
+      "category": {
+        "en": "Rice",
+      "ar": "أرز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 138,
+      "name": {
+        "en": "VEG FRIED RICE",
+        "ar": "الخضار الرز المقلي"
+      },
+      "calories": 1733,
+      "price": 36,
+      "description": {
+        "en": "Steam Rice Fried With Egg And Vegetables",
+        "ar": "الرز مقلي مع البيض والتشكيلة من الخضار"
+      },
+      "category": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 139,
+      "name": {
+        "en": "CHICKEN FRIED RICE",
+        "ar": "دجاج الرز المقلي"
+      },
+      "calories": 2121,
+      "price": 35,
+      "description": {
+        "en": "Steam Rice Fried With Chicken, Egg And Vegetable Garnish.",
+        "ar": "الرز مبخر مع الدجاج مقلي والبيض والتشكيلة من الخضار."
+      },
+      "category": {
+        "en": "Rice",
+      "ar": "أرز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 140,
+      "name": {
+        "en": "ZEERA RICE",
+        "ar": "رز مع الكمون"
+      },
+      "calories": 1695,
+      "price": 20,
+      "description": {
+        "en": "Basmati Steam Rice With Cumin Seed And Green Coriander.",
+        "ar": "الرز باسمتي مبكر مع الكمون والكزيرة الخضراء."
+      },
+      "category": {
+        "en": "Rice",
+      "ar": "أرز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 141,
+      "name": {
+        "en": "PRAWN FRIED RICE",
+        "ar": "جمبري الرز المقلي"
+      },
+      "calories": 1770,
+      "price": 52,
+      "description": {
+        "en": "Basmati Steam Rice Fried With Shrimp And Vegetable Garnish.",
+        "ar": "الرز باسمتي مبخر مع الجمبري وتشكيلة الخضار."
+      },
+      "category": {
+        "en": "Rice",
+      "ar": "أرز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 142,
+      "name": {
+        "en": "NAN/ROTI/KULCHA",
+        "ar": "نان/ خبز عادي/ كلشا"
+      },
+      "calories": 464,
+      "price": 2,
+      "description": {
+        "en": "Flour Baked In Traditional Clay Oven.",
+        "ar": "خيز من الدقيق مكبوز في الفرن الطيني التقليدي."
+      },
+      "category": {
+         "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 143,
+      "name": {
+        "en": "MINT NAN",
+        "ar": "خبز بلنعناع"
+      },
+      "calories": 467,
+      "price": 4,
+      "description": {
+        "en": "Flour Baked With Mint Topping In Traditional Clay Oven.",
+        "ar": "خبز من الدقيق والنعناع الممتاز مكبوز في فرن الطين التقليدي."
+      },
+      "category": {
+         "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 144,
+      "name": {
+        "en": "BUTTER NAN",
+        "ar": "خبز بلزبدة"
+      },
+      "calories": 536,
+      "price": 4,
+      "description": {
+        "en": "White Flour Marinated With Egg, Butter And Milk Baked In Clay Oven.",
+        "ar": "الخبز من الدقيق الأبيض متبل مع البيض والزبدة واللبن ومخبوز في فرن الطين."
+      },
+      "category": {
+         "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+    },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 145,
+      "name": {
+        "en": "GARLIC/CHEESE NAN",
+        "ar": "خبز بالجبنة/ الثوم"
+      },
+      "calories": 519,
+      "price": 5,
+      "description": {
+        "en": "White Flour Stuffing With Butter And Baked In Clay Oven.",
+        "ar": "الخبز من الدقيق الأبيض مع الجبنة أو الثوم مخبوز في فرن الطين."
+      },
+      "category": {
+         "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+    },
+      "image": "https://i.ibb.co/kGvgV4p/Cheese-Nan.jpg"
+    },
+    {
+      "id": 146,
+      "name": {
+        "en": "BUTTER PARATHA",
+        "ar": "زبدة البراتا"
+      },
+      "calories": 500,
+      "price": 4,
+      "description": {
+        "en": "White Flour Stuffing with Butter and Baked in Clay Oven",
+        "ar": "الخبز من الدقيق الأبيض والزبدة مخبوز في الفرن"
+      },
+      "category": {
+        "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 147,
+      "name": {
+        "en": "ALOO PARATHA",
+        "ar": "بطاطس البراتا"
+      },
+      "calories": 521,
+      "price": 6,
+      "description": {
+        "en": "White Flour Stuffing With Mashed Potato Baked In Clay Oven",
+        "ar": "الخبز من الدقيق الأبيض مع البطاطس المهروس مخبوز في القرن الطيني"
+      },
+      "category": {
+        "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 148,
+      "name": {
+        "en": "KHEEMA PARATAH",
+        "ar": "لحم مفروم البراتا"
+      },
+      "calories": 512,
+      "price": 6,
+      "description": {
+        "en": "White Flour Stuffing With Minced Meat & Baked In Clay Oven",
+        "ar": "الخبز من الدقيق الأبيض مع اللحم المفروم مخبوز في الفرن"
+      },
+      "category": {
+        "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+      },
+      "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+    },
+    {
+      "id": 149,
+      "name": {
+        "en": "ASSORTED ROTI",
+        "ar": "خبز المتنوع"
+      },
+      "calories": 509,
+      "price": 10,
+      "description": {
+        "en": "Four Kind For Bread (Kulcha, Roti, Nan, Butter Paratha).",
+        "ar": "الاربعة أزواع من الخبز (كلشا، خبز عادي، نان، براتا)."
+      },
+      "category": {
+         "en": "BREAD BASKET",
+        "ar": "سلة الخبز"
+    },
+      "image": "https://i.ibb.co/LRyc7N5/Assorted-Bread.jpg"
+    },
+     {
+  "id": 150,
+  "name": {
+    "en": "FRESH FRUIT SALAD",
+    "ar": "سلطة فواكة الطازج"
+  },
+  "calories": null,
+  "price": 14,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Desserts",
+    "ar": "الحلويات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 151,
+  "name": {
+    "en": "GULAB JAMUN",
+    "ar": "غلاب جامن"
+  },
+  "calories": null,
+  "price": 18,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Desserts",
+    "ar": "الحلويات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 152,
+  "name": {
+    "en": "ICE CREAM (Vanilla/Strawberry/Chocolate)",
+    "ar": "ايس كريم (فانيليا / فراولة / شوكولاته)"
+  },
+  "calories": null,
+  "price": 12,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Desserts",
+    "ar": "الحلويات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 153,
+  "name": {
+    "en": "GAJER KA HALWA",
+    "ar": "حلقوة الجزر"
+  },
+  "calories": null,
+  "price": 14,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Desserts",
+    "ar": "الحلويات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+"id": 154,
+"name": {
+  "en": "FRESH FRUIT SALAD (WITH ICE CREAM)",
+  "ar": "سلطة فواكة الطازج (مع الأيس كريم)"
+},
+"calories": null,
+"price": 19,
+"description": {
+  "en": "",
+  "ar": ""
+},
+"category": {
+  "en": "Desserts",
+  "ar": "الحلويات"
+},
+"image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 155,
+  "name": {
+    "en": "MANGO LASSI",
+    "ar": "لبن مع المانجو"
+  },
+  "calories": 516,
+  "price": 12,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 156,
+  "name": {
+    "en": "INDIAN VALLEY SPECIAL DRINK",
+    "ar": "شربت الخاص الوادي الهندي"
+  },
+  "calories": 649,
+  "price": 35,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 157,
+  "name": {
+    "en": "FRESH LIME WITH MINT",
+    "ar": "عصير الليمون الطازج مع النعناع"
+  },
+  "calories": 202,
+  "price": 12,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 158,
+  "name": {
+    "en": "COCKTAIL JUICE",
+    "ar": "عصير كوكتل"
+  },
+  "calories": 224,
+  "price": 15,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 159,
+  "name": {
+    "en": "WATER LARGE/SMALL",
+    "ar": "ماء كبير / صغير"
+  },
+  "calories": 0,
+  "price": "2-4",
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 160,
+  "name": {
+    "en": "LASSI (SWEET/SALT)",
+    "ar": "لبن مع (سكر / ملح)"
+  },
+  "calories": 230,
+  "price": 7,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 161,
+  "name": {
+    "en": "FRESH SEASONAL JUICE",
+    "ar": "عصير الموسمية الطازجة"
+  },
+  "calories": null,
+  "price": 16,
+  "description": {
+    "en": "Fresh seasonal juices available in orange, strawberry, banana, or mango.",
+    "ar": "برتقال / فراولة / موز / مانجو"
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 162,
+  "name": {
+    "en": "PINEAPPLE JUICE",
+    "ar": "عصير أناناس"
+  },
+  "calories": 133,
+  "price": 16,
+  "description": {
+    "en": "",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 163,
+  "name": {
+    "en": "MOJITO FLAVORED",
+    "ar": "موهيتو نكها"
+  },
+  "calories": 250,
+  "price": 19,
+  "description": {
+    "en": "Flavored mojito available in lemon, raspberry, strawberry, peach, or green apple.",
+    "ar": "ليمون / توت / فراولة / خوخ / تفاح أخضر"
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+},
+{
+  "id": 164,
+  "name": {
+    "en": "PEPSI/7UP",
+    "ar": "بيبسي / سفن اب"
+  },
+  "calories": 137,
+  "price": 4,
+  "description": {
+    "en": "Carbonated soft drink options.",
+    "ar": ""
+  },
+  "category": {
+    "en": "Drinks",
+    "ar": "المشروبات"
+  },
+  "image": "https://i.ibb.co/1b6jWSG/IMG-20241007-WA0000.jpg"
+}
+
 ]
