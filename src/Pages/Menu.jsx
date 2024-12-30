@@ -70,14 +70,9 @@ const Menu = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
         {filteredItems.map((item) => (
           <ItamCard
-            key={item.id} // Use a unique identifier for the key
-            item={{
-              ...item,
-              name: item.name.en, // Accessing the English name
-              description: item.description.en || "No description available", // Accessing the English description
-              category: item.category.en, // Accessing the English category
-            }}
-          />
+            key={item.id}
+            item={item}
+         />
         ))}
       </div>
     </div>
