@@ -1,18 +1,30 @@
 import Banner from "../componants/Home/Banner";
 import ItamCard from "../componants/ItamCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useMenu from "../Hooks/useMenu";
 import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
 import "swiper/css"; // Core Swiper CSS
+import { useAuth } from "../AuthProvider/AuthContext"; // Import Auth context for language
 
 const Menu = () => {
   const [menu] = useMenu(); // Assuming this returns the menu items
-  const [selectedCategory, setSelectedCategory] = useState("Soups"); // Default selected category set to "Dessert"
+  const { language } = useAuth(); // Get selected language from context
+  const [selectedCategory, setSelectedCategory] = useState(""); // Initialize with an empty string
+
+  // Effect to set the default category based on the language
+  useEffect(() => {
+    if (language === "ar") {
+      setSelectedCategory("الشوربات"); // Set default category to Arabic when language is Arabic
+    } else {
+      setSelectedCategory("Soups"); // Set default category to English when language is English
+    }
+  }, [language]);
 
   // Get unique categories and their first item's image for display
   const categoriesWithImages = menu.reduce((acc, item) => {
-    if (!acc[item.category.en]) {  // Accessing English category name
-      acc[item.category.en] = item.image; // Add category with the first item's image
+    const categoryName = item.category[language]; // Use the selected language for category name
+    if (!acc[categoryName]) {
+      acc[categoryName] = item.image; // Add category with the first item's image
     }
     return acc;
   }, {});
@@ -21,7 +33,7 @@ const Menu = () => {
 
   // Filter items based on selected category
   const filteredItems = menu.filter(
-    (item) => item.category.en === selectedCategory // Accessing English category name
+    (item) => item.category[language] === selectedCategory // Filter using the selected language
   );
 
   return (
@@ -69,10 +81,7 @@ const Menu = () => {
       {/* Menu Items */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
         {filteredItems.map((item) => (
-          <ItamCard
-            key={item.id}
-            item={item}
-         />
+          <ItamCard key={item.id} item={item} />
         ))}
       </div>
     </div>

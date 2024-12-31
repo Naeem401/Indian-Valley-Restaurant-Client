@@ -12,8 +12,35 @@ import slide6 from '../../assets/img/catagory-slider/fish-tandoori.jpg';
 import slide7 from '../../assets/img/catagory-slider/cafe-ka-dum.jpg';
 import slide8 from '../../assets/img/catagory-slider/deinks.jpg';
 import slide9 from '../../assets/img/catagory-slider/dessert.jpg';
+import { useAuth } from '../../AuthProvider/AuthContext';
 
 const ItameSlider = () => {
+     const { language } = useAuth();
+    const titles = {
+        en: [
+            "Appetizer",
+            "Soup",
+            "Salads",
+            "Veg Delight",
+            "Mutton Tandoori",
+            "Fish Tandoori",
+            "Cafe Ka Dum",
+            "Drinks",
+            "Dessert",
+        ],
+        ar: [
+            "مقبلات",
+            "حساء",
+            "سلطات",
+            "متعة نباتية",
+            "تندوري لحم الضأن",
+            "تندوري السمك",
+            "كافيه كا دوم",
+            "مشروبات",
+            "حلويات",
+        ],
+    };
+
     return (
         <div className="w-4/5 mx-auto">
             <Swiper
@@ -47,7 +74,7 @@ const ItameSlider = () => {
                         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                         {/* Text content */}
                         <h2 className="text-center absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 text-white text-2xl">
-                            {["Appetizer", "Supe", "Salads", "Veg Delight", "Mutton Tandoori", "Fish Tandoori", "Cafe Ka Dum", "Drinks", "Dessert"][index]}
+                            {titles[language][index]}
                         </h2>
                     </SwiperSlide>
                 ))}

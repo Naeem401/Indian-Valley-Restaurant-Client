@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import useMenu from "../../Hooks/useMenu";
 import PopularMenuItem from "./PopularMenuItem";
+import { useAuth } from "../../AuthProvider/AuthContext";
 
 const PopularItem = () => {
     const [menu] = useMenu();
+    const { language } = useAuth();
     const popularItems = menu.filter((item) => item.popular);
 
     return (
@@ -14,9 +16,10 @@ const PopularItem = () => {
                 ))}
             </div>
             <Link to='/menu' className="mx-auto">
-            <button className="p-4 border-b-2 border-white rounded-lg hover:border-b-[#D99904]  font-medium text-xl text-white">
-                View Full Menu
-            </button>
+            <button className="p-4 border-b-2 border-white rounded-lg hover:border-b-[#D99904] font-medium text-xl text-white">
+    {language === 'en' ? 'View Full Menu' : 'عرض القائمة الكاملة'}
+</button>
+
             </Link>
         </div>
     );
