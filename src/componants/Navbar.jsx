@@ -5,7 +5,7 @@ import { useAuth } from "../AuthProvider/AuthContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { language, toggleLanguage } = useAuth();
+  const { language, toggleLanguage, user, logOut } = useAuth();
 
   // Menu items translations
   const translations = {
@@ -16,6 +16,7 @@ const Navbar = () => {
         { path: "/contact", label: "Contact Us" },
       ],
       login: "Login",
+      logout: "Logout",
       toggleLang: "AR",
     },
     ar: {
@@ -25,6 +26,7 @@ const Navbar = () => {
         { path: "/contact", label: "اتصل بنا" },
       ],
       login: "تسجيل الدخول",
+      logout: "تسجيل الخروج",
       toggleLang: "EN",
     },
   };
@@ -63,11 +65,22 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Language Toggle and Login */}
+          {/* Language Toggle and Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to='/login'><button className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300">
-              {currentTranslations.login}
-            </button></Link>
+            {user ? (
+              <button
+                onClick={logOut}
+                className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300"
+              >
+                {currentTranslations.logout}
+              </button>
+            ) : (
+              <Link to="/login">
+                <button className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300">
+                  {currentTranslations.login}
+                </button>
+              </Link>
+            )}
             <button
               onClick={toggleLanguage}
               className="text-white py-2 px-4 rounded transition duration-300"
@@ -143,12 +156,26 @@ const Navbar = () => {
               {label}
             </NavLink>
           ))}
-          <button
-            className="bg-[#D99904] hover:bg-[#dbaa1a] text-[#151515] font-bold py-2 px-4 rounded w-full"
-            onClick={() => setIsOpen(false)}
-          >
-            {currentTranslations.login}
-          </button>
+          {user ? (
+            <button
+              onClick={() => {
+                logOut();
+                setIsOpen(false);
+              }}
+              className="bg-[#D99904] hover:bg-[#dbaa1a] text-[#151515] font-bold py-2 px-4 rounded w-full"
+            >
+              {currentTranslations.logout}
+            </button>
+          ) : (
+            <Link to="/login">
+              <button
+                className="bg-[#D99904] hover:bg-[#dbaa1a] text-[#151515] font-bold py-2 px-4 rounded w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                {currentTranslations.login}
+              </button>
+            </Link>
+          )}
           <button
             onClick={() => {
               toggleLanguage();
