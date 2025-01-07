@@ -4,7 +4,7 @@ const useMenu = () => {
     const [menu, setMenu] = useState([]);
 
     useEffect(() => {
-        fetch('/menu.json')
+        fetch('https://indian-valley-resturand-server.vercel.app/menu')
             .then((res) => res.json())
             .then((data) => setMenu(data));
     }, []);
