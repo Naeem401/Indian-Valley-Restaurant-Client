@@ -66,11 +66,10 @@ const Registration = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, phone, password, confirmPassword } = formData;
-
+  
     // Check if passwords match
     if (password !== confirmPassword) {
       Swal.fire({
@@ -80,14 +79,14 @@ const Registration = () => {
       });
       return;
     }
-
+  
     try {
       // Create user with Firebase
-      await createUser(email, password);
-
-      // Update user profile
-      await updateUserProfile(name, null);
-
+      await createUser(email, password, name, phone);  // Pass name and phone to createUser
+  
+      // Update user profile with name only (no photo)
+      await updateUserProfile(name);
+  
       // Clear form and show success message
       setFormData({ name: "", email: "", phone: "", password: "", confirmPassword: "" });
       setError(""); // Clear any previous errors
@@ -106,7 +105,7 @@ const Registration = () => {
       });
     }
   };
-
+  
   return (
     <div
       className={`flex flex-col-reverse sm:flex-col-reverse lg:flex-row bg-gray-100 rounded-lg shadow-lg p-10 ${

@@ -4,6 +4,12 @@ import Home from "../Pages/Home";
 import Menu from "../Pages/Menu";
 import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
+import DashboardLayout from "../Mainlayout/DashboardLayout";
+import AdminHome from "../Pages/Dashboard/Admin/AdminHome";
+import AddItems from "../Pages/Dashboard/Admin/AddItems";
+import ManageItems from "../Pages/Dashboard/Admin/ManageItems";
+import ManageBooking from "../Pages/Dashboard/Admin/ManageBooking";
+import ManageUsers from "../Pages/Dashboard/Admin/ManageUsers";
 
 
 export const router = createBrowserRouter([
@@ -30,4 +36,30 @@ export const router = createBrowserRouter([
         }
       ]
     },
+    {
+      path: 'dashboard',
+      element:<DashboardLayout />,
+      children: [
+        {
+          path: 'admin-home',
+          element: <AdminHome/>
+        },
+        {
+          path: 'add-items',
+          element: <AddItems/>
+        },
+        {
+          path: 'manage-items',
+          element: <ManageItems/>
+        },
+        {
+          path: 'manage-booking',
+          element:<ManageBooking/>
+        },
+        {
+          path: 'manage-users',
+          element: <ManageUsers/>
+        }
+      ]
+    }
   ]);

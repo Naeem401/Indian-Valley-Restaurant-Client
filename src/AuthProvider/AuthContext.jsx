@@ -8,6 +8,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+import axios from "axios"; // Ensure axios is installed for making HTTP requests
 
 // Create Context
 const AuthContext = createContext();
@@ -28,16 +29,44 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Create User
-  const createUser = async (email, password) => {
+  const createUser = async (email, password, name, phone) => {
     setLoading(true);
     try {
+      // Create user in Firebase
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+      // Save user data (name, email, phone) to the database
+      await saveUserToDatabase(userCredential.user, name, phone);
+
       return userCredential;
     } catch (error) {
       console.error("Error creating user:", error.message);
       throw error;
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Save user data to the database
+  const saveUserToDatabase = async (firebaseUser, name, phone) => {
+    try {
+      const userData = {
+        email: firebaseUser.email,
+        name: name,
+        phone: phone,
+        role: "customer", // Default role is student
+        status: "Verified", // Set status to Verified initially
+      };
+
+      // Send the user data to the backend API to save it in your database
+      const response = await axios.put(
+        `${import.meta.env.VITE_API_URL}/user`, // Replace with your API endpoint
+        userData
+      );
+      return response.data;
+    } catch (error) {
+      console.error("Error saving user to the database:", error.message);
+      throw error;
     }
   };
 
@@ -68,12 +97,11 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Update User Profile
-  const updateUserProfile = async (name, photo) => {
+  // Update User Profile without photoURL
+  const updateUserProfile = async (name) => {
     try {
       await updateProfile(auth.currentUser, {
         displayName: name,
-        photoURL: photo,
       });
     } catch (error) {
       console.error("Error updating profile:", error.message);

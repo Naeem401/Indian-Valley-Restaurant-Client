@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa"; // Importing the down arrow
 import logo from "../assets/img/logo (2).png";
 import { useAuth } from "../AuthProvider/AuthContext";
+import useUserRole from "../Hooks/useUserRole";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown
   const { language, toggleLanguage, user, logOut } = useAuth();
+  const { role, isLoading } = useUserRole(); // Fetch role using the hook
 
   // Menu items translations
   const translations = {
@@ -18,6 +22,7 @@ const Navbar = () => {
       login: "Login",
       logout: "Logout",
       toggleLang: "AR",
+      dashboard: "Dashboard", // Added dashboard text
     },
     ar: {
       menuItems: [
@@ -28,10 +33,14 @@ const Navbar = () => {
       login: "تسجيل الدخول",
       logout: "تسجيل الخروج",
       toggleLang: "EN",
+      dashboard: "لوحة التحكم", // Added dashboard text
     },
   };
 
   const currentTranslations = translations[language];
+
+  // Determine dashboard link based on user role
+  const dashboardLink = role === "admin" ? "dashboard/admin-home" : "dashboard/myHome";
 
   // Function to determine active link styling
   const linkClasses = (isActive) =>
@@ -67,20 +76,58 @@ const Navbar = () => {
 
           {/* Language Toggle and Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            {user ? (
-              <button
-                onClick={logOut}
-                className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300"
-              >
-                {currentTranslations.logout}
-              </button>
-            ) : (
+            {/* Username with Dropdown */}
+            {user && (
+              <div className="relative">
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className="flex items-center bg-[#D99904] hover:bg-[#dbaa1a] text-black font-semibold py-2 px-4 rounded-full"
+                >
+                  <span>{user?.displayName}</span>
+                  <FaChevronDown className="ml-2" />
+                </button>
+
+                {/* Dropdown Menu */}
+                {dropdownOpen && (
+                  <div
+                    className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg z-50"
+                    style={{ top: "100%", right: "0" }}
+                  >
+                    {isLoading ? (
+                      <div className="text-center px-4 py-2">Loading...</div>
+                    ) : (
+                      <Link
+                        to={dashboardLink}
+                        className="block px-4 py-2 text-sm text-center hover:bg-gray-200"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        {currentTranslations.dashboard}
+                      </Link>
+                    )}
+                    <button
+                      onClick={() => {
+                        logOut();
+                        setDropdownOpen(false);
+                      }}
+                      className="block px-4 py-2 text-sm w-full text-left hover:bg-gray-200"
+                    >
+                      {currentTranslations.logout}
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Login Button */}
+            {!user && (
               <Link to="/login">
                 <button className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300">
                   {currentTranslations.login}
                 </button>
               </Link>
             )}
+
+            {/* Language Toggle Button */}
             <button
               onClick={toggleLanguage}
               className="text-white py-2 px-4 rounded transition duration-300"
@@ -135,58 +182,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
-        >
-          {currentTranslations.menuItems.map(({ path, label }, index) => (
-            <NavLink
-              key={index}
-              to={path}
-              className={({ isActive }) =>
-                isActive
-                  ? "block text-base font-medium text-[#D99904]"
-                  : "block text-base font-medium text-white hover:text-[#D99904]"
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              {label}
-            </NavLink>
-          ))}
-          {user ? (
-            <button
-              onClick={() => {
-                logOut();
-                setIsOpen(false);
-              }}
-              className="bg-[#D99904] hover:bg-[#dbaa1a] text-[#151515] font-bold py-2 px-4 rounded w-full"
-            >
-              {currentTranslations.logout}
-            </button>
-          ) : (
-            <Link to="/login">
-              <button
-                className="bg-[#D99904] hover:bg-[#dbaa1a] text-[#151515] font-bold py-2 px-4 rounded w-full"
-                onClick={() => setIsOpen(false)}
-              >
-                {currentTranslations.login}
-              </button>
-            </Link>
-          )}
-          <button
-            onClick={() => {
-              toggleLanguage();
-              setIsOpen(false);
-            }}
-            className="bg-gray-700 text-white py-2 px-4 rounded w-full"
-          >
-            {currentTranslations.toggleLang}
-          </button>
-        </div>
-      )}
     </nav>
   );
 };
