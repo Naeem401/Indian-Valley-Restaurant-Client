@@ -59,8 +59,8 @@ export const AuthProvider = ({ children }) => {
       };
 
       // Send the user data to the backend API to save it in your database
-      const response = await axios.put(
-        `${import.meta.env.VITE_API_URL}/user`, // Replace with your API endpoint
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/users`,
         userData
       );
       return response.data;

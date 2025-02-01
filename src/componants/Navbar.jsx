@@ -181,6 +181,96 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        <div
+          id="mobile-menu"
+          style={{
+            transform: isOpen ? "translateX(0)" : "translateX(100%)",
+            transition: "transform 0.3s ease-in-out",
+          }}
+          className="md:hidden fixed inset-0 bg-[#000000a2] z-50"
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 p-2 text-white hover:text-[#D99904]"
+            >
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Menu Items */}
+            {currentTranslations.menuItems.map(({ path, label }, index) => (
+              <NavLink
+                key={index}
+                to={path}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded-md text-base font-medium ${
+                    isActive ? "text-[#D99904]" : "text-white hover:text-[#D99904]"
+                  }`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                {label}
+              </NavLink>
+            ))}
+
+            {/* Dashboard and Logout */}
+            {user && (
+              <div className="px-3 py-2">
+                <Link
+                  to={dashboardLink}
+                  className="block text-white hover:text-[#D99904]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {currentTranslations.dashboard}
+                </Link>
+                <button
+                  onClick={() => {
+                    logOut();
+                    setIsOpen(false);
+                  }}
+                  className="block text-white hover:text-[#D99904] w-full text-left"
+                >
+                  {currentTranslations.logout}
+                </button>
+              </div>
+            )}
+
+            {/* Login Button */}
+            {!user && (
+              <Link
+                to="/login"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#D99904]"
+                onClick={() => setIsOpen(false)}
+              >
+                {currentTranslations.login}
+              </Link>
+            )}
+
+            {/* Language Toggle Button */}
+            <button
+              onClick={toggleLanguage}
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#D99904] w-full text-left"
+            >
+              {currentTranslations.toggleLang}
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );
