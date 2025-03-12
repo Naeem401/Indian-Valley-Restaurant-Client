@@ -1,15 +1,16 @@
-import { useAuth } from "../AuthProvider/AuthContext";
+
+import { useApp } from "../AppContext/AppContext";
 import Banner from "../componants/Home/Banner";
 import ChefRecommends from "../componants/Home/ChefRecommends";
 import Featured from "../componants/Home/Featured/Featured";
-import ItameSlider from "../componants/Home/ItameSlider";
+import ItemSlider from "../componants/Home/ItameSlider";
 import MidBanner from "../componants/Home/MidBanner";
 import PopularItem from "../componants/Home/PopularItem";
-import Testtimonials from "../componants/Home/Testtimonials";
+import Testimonials from "../componants/Home/Testtimonials";
 import SectionTitle from "../componants/SectionTitle";
 
 const Home = () => {
-  const { language } = useAuth();
+  const { language } = useApp();
 
   // Translations
   const translations = {
@@ -27,16 +28,18 @@ const Home = () => {
     },
   };
 
-  const t = translations[language]; // Fetch translations for current language
+  const t = translations[language]; 
 
   return (
-    <div>
-      <Banner />
+    <div className="bg-black text-white">
+      <div className="pt-16">
+  <Banner />
+</div>
       <SectionTitle 
         subHeading={t.orderOnline.subHeading} 
         heading={t.orderOnline.heading} 
       />
-      <ItameSlider />
+      <ItemSlider />
       <MidBanner />
       <SectionTitle 
         subHeading={t.fromOurMenu.subHeading} 
@@ -53,7 +56,7 @@ const Home = () => {
         subHeading={t.testimonials.subHeading} 
         heading={t.testimonials.heading} 
       />
-      <Testtimonials />
+      <Testimonials />
     </div>
   );
 };

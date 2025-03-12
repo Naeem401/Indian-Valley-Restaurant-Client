@@ -1,35 +1,35 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useAuth } from "../AuthProvider/AuthContext";
+import { useApp } from "../AppContext/AppContext";
 
 const useUserRole = () => {
-  const { user } = useAuth();
-  const [role, setRole] = useState(null); // Default role is null
-  const [isLoading, setIsLoading] = useState(true); // Loading state
+  const { user } = useApp();
+  const [role, setRole] = useState(null);
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     const fetchUserRole = async () => {
       if (user?.email) {
+        setLoading(true); // Set loading to true before fetching
         try {
-          setIsLoading(true);
-          // Fetch user data based on email
           const { data } = await axios.get(
             `${import.meta.env.VITE_API_URL}/user/${user.email}`
           );
-          setRole(data.role); // Set the role from the response data
+          setRole(data.role || null); // Ensure role is explicitly set
         } catch (error) {
           console.error("Error fetching user role:", error);
-          setRole(null); // Reset role in case of error
         } finally {
-          setIsLoading(false); // Set loading to false after fetching
+          setLoading(false); // Set loading to false after fetching
         }
+      } else {
+        setLoading(false); // If no user, stop loading
       }
     };
 
     fetchUserRole();
-  }, [user]);
+  }, [user?.email]); // Depend on user email
 
-  return { role, isLoading };
+  return { role, loading };
 };
 
 export default useUserRole;

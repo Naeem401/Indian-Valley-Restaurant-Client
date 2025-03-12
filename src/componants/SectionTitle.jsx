@@ -1,12 +1,12 @@
-
-
-const SectionTitle = ({heading, subHeading}) => {
+const SectionTitle = ({ subHeading, heading }) => {
     return (
-        <div className="mx-auto text-center md:w-4/12 my-8">
-            <p className="text-[#D99904] mb-2">--- {subHeading} ---</p>
-            <h3 className="text-3xl uppercase border-y-4 py-4 text-white">{heading}</h3>
-        </div>
+      <div className="text-center my-12">
+        <p className="text-[#D99904] text-lg">{subHeading}</p>
+        <h2 className="text-3xl lg:text-4xl text-white font-bold border-y-4 w-1/2 mx-auto py-4">
+          {heading}
+        </h2>
+      </div>
     );
-};
-
-export default SectionTitle;
+  };
+  
+  export default SectionTitle;

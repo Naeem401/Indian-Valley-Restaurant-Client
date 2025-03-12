@@ -1,28 +1,28 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa"; // Importing the down arrow
+import { FaChevronDown, FaShoppingCart, FaUser, FaSignOutAlt } from "react-icons/fa";
 import logo from "../assets/img/logo (2).png";
-import { useAuth } from "../AuthProvider/AuthContext";
 import useUserRole from "../Hooks/useUserRole";
+import { useApp } from "../AppContext/AppContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown
-  const { language, toggleLanguage, user, logOut } = useAuth();
-  const { role, isLoading } = useUserRole(); // Fetch role using the hook
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { language, toggleLanguage, user, logOut, cart } = useApp();
+  const { role, isLoading } = useUserRole();
 
-  // Menu items translations
   const translations = {
     en: {
       menuItems: [
         { path: "/", label: "Home" },
         { path: "/menu", label: "Our Menu" },
-        { path: "/contact", label: "Contact Us" },
+        { path: "/contacts", label: "Contact Us" },
       ],
       login: "Login",
       logout: "Logout",
       toggleLang: "AR",
-      dashboard: "Dashboard", // Added dashboard text
+      dashboard: "Dashboard",
+      cart: "Cart"
     },
     ar: {
       menuItems: [
@@ -33,23 +33,26 @@ const Navbar = () => {
       login: "تسجيل الدخول",
       logout: "تسجيل الخروج",
       toggleLang: "EN",
-      dashboard: "لوحة التحكم", // Added dashboard text
+      dashboard: "لوحة التحكم",
+      cart: "عربة التسوق"
     },
   };
 
   const currentTranslations = translations[language];
+  const dashboardLink = role === "admin" ? "dashboard/admin-home" : "dashboard/customer-home";
 
-  // Determine dashboard link based on user role
-  const dashboardLink = role === "admin" ? "dashboard/admin-home" : "dashboard/myHome";
-
-  // Function to determine active link styling
   const linkClasses = (isActive) =>
     isActive
       ? "text-[#D99904]"
       : "hover:text-[#D99904] transition duration-300 ease-in-out";
 
+  const handleLogout = () => {
+    logOut();
+      setDropdownOpen(false);
+  };
+
   return (
-    <nav className="bg-[#000000a2] text-white font-inter font-semibold text-lg">
+    <nav className="bg-[#000000a2] text-white font-inter font-semibold text-lg fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -62,7 +65,7 @@ const Navbar = () => {
           </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {currentTranslations.menuItems.map(({ path, label }, index) => (
               <NavLink
                 key={index}
@@ -74,25 +77,46 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Language Toggle and Auth Buttons */}
+          {/* Right Side Icons and Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Username with Dropdown */}
-            {user && (
+            {/* Cart Icon */}
+            <NavLink 
+              to="dashboard/customer-cart"
+              className="relative hover:text-[#D99904] transition duration-300"
+              aria-label="Cart"
+            >
+              <FaShoppingCart className="text-2xl" />
+              {cart.items.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {cart.items.length}
+                </span>
+              )}
+            </NavLink>
+
+            {/* Language Toggle */}
+            <button
+              onClick={toggleLanguage}
+              className="hover:text-[#D99904] transition duration-300"
+              aria-label="Toggle Language"
+            >
+              {currentTranslations.toggleLang}
+            </button>
+
+            {/* User Dropdown */}
+            {user ? (
               <div className="relative">
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="flex items-center bg-[#D99904] hover:bg-[#dbaa1a] text-black font-semibold py-2 px-4 rounded-full"
+                  className="flex items-center bg-[#D99904] hover:bg-[#dbaa1a] text-black font-semibold py-2 px-4 rounded-full transition duration-300"
+                  aria-label="User Menu"
                 >
+                  <FaUser className="mr-2" />
                   <span>{user?.displayName}</span>
                   <FaChevronDown className="ml-2" />
                 </button>
 
-                {/* Dropdown Menu */}
                 {dropdownOpen && (
-                  <div
-                    className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg z-50"
-                    style={{ top: "100%", right: "0" }}
-                  >
+                  <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg z-50">
                     {isLoading ? (
                       <div className="text-center px-4 py-2">Loading...</div>
                     ) : (
@@ -105,77 +129,51 @@ const Navbar = () => {
                       </Link>
                     )}
                     <button
-                      onClick={() => {
-                        logOut();
-                        setDropdownOpen(false);
-                      }}
+                      onClick={handleLogout}
                       className="block px-4 py-2 text-sm w-full text-left hover:bg-gray-200"
                     >
+                      <FaSignOutAlt className="inline-block mr-2" />
                       {currentTranslations.logout}
                     </button>
                   </div>
                 )}
               </div>
-            )}
-
-            {/* Login Button */}
-            {!user && (
+            ) : (
               <Link to="/login">
                 <button className="bg-[#D99904] hover:bg-[#dbaa1a] text-white font-bold py-2 px-4 rounded transition duration-300">
                   {currentTranslations.login}
                 </button>
               </Link>
             )}
-
-            {/* Language Toggle Button */}
-            <button
-              onClick={toggleLanguage}
-              className="text-white py-2 px-4 rounded transition duration-300"
-            >
-              {currentTranslations.toggleLang}
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-4">
+            <NavLink 
+              to="dashboard/customer-cart"
+              className="relative hover:text-[#D99904]"
+              aria-label="Cart"
+            >
+              <FaShoppingCart className="text-2xl" />
+              {cart.items.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {cart.items.length}
+                </span>
+              )}
+            </NavLink>
+            
             <button
               onClick={() => setIsOpen(!isOpen)}
-              type="button"
               className="p-2 rounded-md text-gray-400 hover:text-white"
-              aria-expanded={isOpen}
-              aria-controls="mobile-menu"
+              aria-label="Toggle Menu"
             >
               {isOpen ? (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
               )}
             </button>
@@ -184,91 +182,75 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          id="mobile-menu"
-          style={{
-            transform: isOpen ? "translateX(0)" : "translateX(100%)",
-            transition: "transform 0.3s ease-in-out",
-          }}
-          className="md:hidden fixed inset-0 bg-[#000000a2] z-50"
+          className={`md:hidden fixed inset-0 bg-[#000000a2] z-40 transform ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {/* Close Button */}
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 h-full relative">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 p-2 text-white hover:text-[#D99904]"
+              aria-label="Close Menu"
             >
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            {/* Menu Items */}
-            {currentTranslations.menuItems.map(({ path, label }, index) => (
-              <NavLink
-                key={index}
-                to={path}
-                className={({ isActive }) =>
-                  `block px-3 py-2 rounded-md text-base font-medium ${
-                    isActive ? "text-[#D99904]" : "text-white hover:text-[#D99904]"
-                  }`
-                }
-                onClick={() => setIsOpen(false)}
-              >
-                {label}
-              </NavLink>
-            ))}
-
-            {/* Dashboard and Logout */}
-            {user && (
-              <div className="px-3 py-2">
-                <Link
-                  to={dashboardLink}
-                  className="block text-white hover:text-[#D99904]"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {currentTranslations.dashboard}
-                </Link>
-                <button
-                  onClick={() => {
-                    logOut();
-                    setIsOpen(false);
-                  }}
-                  className="block text-white hover:text-[#D99904] w-full text-left"
-                >
-                  {currentTranslations.logout}
-                </button>
+            <div className="flex flex-col h-full justify-between">
+              <div className="space-y-4">
+                {currentTranslations.menuItems.map(({ path, label }, index) => (
+                  <NavLink
+                    key={index}
+                    to={path}
+                    className={({ isActive }) =>
+                      `block px-3 py-2 rounded-md text-xl font-medium ${
+                        isActive ? "text-[#D99904]" : "text-white hover:text-[#D99904]"
+                      }`
+                    }
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {label}
+                  </NavLink>
+                ))}
               </div>
-            )}
 
-            {/* Login Button */}
-            {!user && (
-              <Link
-                to="/login"
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#D99904]"
-                onClick={() => setIsOpen(false)}
-              >
-                {currentTranslations.login}
-              </Link>
-            )}
+              <div className="space-y-4 pb-8">
+                <button
+                  onClick={toggleLanguage}
+                  className="block w-full text-left px-3 py-2 rounded-md text-xl font-medium text-white hover:text-[#D99904]"
+                >
+                  {currentTranslations.toggleLang}
+                </button>
 
-            {/* Language Toggle Button */}
-            <button
-              onClick={toggleLanguage}
-              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#D99904] w-full text-left"
-            >
-              {currentTranslations.toggleLang}
-            </button>
+                {user ? (
+                  <>
+                    <Link
+                      to={dashboardLink}
+                      className="block px-3 py-2 rounded-md text-xl font-medium text-white hover:text-[#D99904]"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {currentTranslations.dashboard}
+                    </Link>
+                    <button
+                      onClick={handleLogout}
+                      className="block w-full text-left px-3 py-2 rounded-md text-xl font-medium text-white hover:text-[#D99904]"
+                    >
+                      <FaSignOutAlt className="inline-block mr-2" />
+                      {currentTranslations.logout}
+                    </button>
+                  </>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="block px-3 py-2 rounded-md text-xl font-medium text-white hover:text-[#D99904]"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {currentTranslations.login}
+                  </Link>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

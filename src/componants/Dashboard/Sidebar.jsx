@@ -1,44 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FcSettings } from "react-icons/fc";
 import { GrLogout } from "react-icons/gr";
 import AdminMenu from "./NavMenu/AdminMenu";
 import MenuItem from "./NavMenu/MenuItem";
-import { useAuth } from "../../AuthProvider/AuthContext";
-import axios from "axios";
 import logo from "../../assets/img/logo (2).png";
+import { useApp } from "../../AppContext/AppContext";
+import CustomerMenu from "./NavMenu/CustomerMenu";
+import useUserRole from "../../Hooks/useUserRole";
 
 const Sidebar = () => {
   const [isActive, setActive] = useState(false);
-  const [role, setRole] = useState(null); // State to store user role
-  const { user, logOut } = useAuth(); // Assuming user data is available from AuthContext
+  const { role } = useUserRole();
+  const { logOut } = useApp(); 
 
   // Sidebar Responsive Handler
   const handleToggle = () => {
     setActive(!isActive);
   };
 
-  useEffect(() => {
-    // Fetch user role based on email from AuthContext
-    const fetchUserRole = async () => {
-      if (user?.email) {
-        try {
-          // Fetch user data based on email
-          const { data } = await axios.get(
-            `${import.meta.env.VITE_API_URL}/user/${user.email}`
-          );
-          setRole(data.role); // Set the role from the response data
-        } catch (error) {
-          console.error("Error fetching user role:", error);
-        }
-      }
-    };
-
-    if (user?.email) {
-      fetchUserRole();
-    }
-  }, [user]); // Fetch the role whenever the user changes
-
+ 
   return (
     <>
       {/* Small Screen Navbar */}
@@ -109,7 +90,7 @@ const Sidebar = () => {
           <div className="flex flex-col justify-between flex-1 mt-6">
             {/*  Menu Items */}
             <nav>
-              {role === "customer" && <h2>Customer Menu</h2>}
+              {role === "customer" && <CustomerMenu />}
               {role === "admin" && <AdminMenu />}
             </nav>
           </div>
@@ -119,7 +100,7 @@ const Sidebar = () => {
           <hr />
 
           {/* Profile Menu */}
-          <MenuItem label="Profile" address="/profile" icon={FcSettings} />
+          <MenuItem label="Profile" address="profile" icon={FcSettings} />
 
           <button
             onClick={logOut}

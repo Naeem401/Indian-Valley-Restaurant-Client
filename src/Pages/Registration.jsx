@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../AuthProvider/AuthContext";
 import img from '../assets/img/authentication2.png';
 import { useState } from "react";
 import Swal from 'sweetalert2';
+import { useApp } from "../AppContext/AppContext";
 
 const Registration = () => {
-  const { language, createUser, updateUserProfile } = useAuth();
+  const { language, createUser, updateUserProfile } = useApp();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -16,7 +16,6 @@ const Registration = () => {
   });
   const [error, setError] = useState("");
 
-  // Language-specific content
   const texts = {
     en: {
       title: "Registration",
@@ -27,7 +26,7 @@ const Registration = () => {
       confirmPasswordLabel: "Confirm Password",
       namePlaceholder: "Enter your full name",
       emailPlaceholder: "Enter your email",
-      phonePlaceholder: "Enter your phone number",
+      phonePlaceholder: "05XXXXXXXX",
       passwordPlaceholder: "Enter your password",
       confirmPasswordPlaceholder: "Confirm your password",
       registerButton: "Register",
@@ -46,7 +45,7 @@ const Registration = () => {
       confirmPasswordLabel: "تأكيد كلمة المرور",
       namePlaceholder: "أدخل اسمك الكامل",
       emailPlaceholder: "أدخل بريدك الإلكتروني",
-      phonePlaceholder: "أدخل رقم هاتفك",
+      phonePlaceholder: "05XXXXXXXX",
       passwordPlaceholder: "أدخل كلمة المرور",
       confirmPasswordPlaceholder: "أكد كلمة المرور",
       registerButton: "تسجيل",
@@ -60,7 +59,6 @@ const Registration = () => {
 
   const selectedTexts = texts[language];
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -69,8 +67,7 @@ const Registration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, phone, password, confirmPassword } = formData;
-  
-    // Check if passwords match
+
     if (password !== confirmPassword) {
       Swal.fire({
         icon: 'error',
@@ -79,23 +76,18 @@ const Registration = () => {
       });
       return;
     }
-  
+
     try {
-      // Create user with Firebase
-      await createUser(email, password, name, phone);  // Pass name and phone to createUser
-  
-      // Update user profile with name only (no photo)
+      await createUser(email, password, name, phone);
       await updateUserProfile(name);
-  
-      // Clear form and show success message
       setFormData({ name: "", email: "", phone: "", password: "", confirmPassword: "" });
-      setError(""); // Clear any previous errors
+      setError("");
       Swal.fire({
         icon: 'success',
         title: selectedTexts.successRegister,
         showConfirmButton: true,
       });
-      navigate("/"); 
+      navigate("/");
     } catch (err) {
       console.error(err);
       Swal.fire({
@@ -105,76 +97,76 @@ const Registration = () => {
       });
     }
   };
-  
+
   return (
     <div
-      className={`flex flex-col-reverse sm:flex-col-reverse lg:flex-row bg-gray-100 rounded-lg shadow-lg p-10 ${
+      className={`flex flex-col-reverse sm:flex-col-reverse lg:flex-row bg-black text-white rounded-lg shadow-lg p-10 ${
         language === "ar" ? "text-right" : "text-left"
       }`}
     >
       {/* Left Section - Form */}
       <div className="w-full md:w-full lg:w-1/2 p-8 lg:order-first">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">{selectedTexts.title}</h2>
+        <h2 className="text-2xl font-bold mb-6 text-yellow-500 text-center">{selectedTexts.title}</h2>
         <form onSubmit={handleSubmit}>
           {error && <p className="text-red-500 text-center mb-4">{error}</p>}
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium">{selectedTexts.nameLabel}</label>
+            <label className="block text-gray-300 font-medium">{selectedTexts.nameLabel}</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
               placeholder={selectedTexts.namePlaceholder}
-              className="w-full p-3 border border-gray-300 rounded bg-gray-50"
+              className="w-full p-3 border border-gray-600 rounded bg-gray-800 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium">{selectedTexts.emailLabel}</label>
+            <label className="block text-gray-300 font-medium">{selectedTexts.emailLabel}</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder={selectedTexts.emailPlaceholder}
-              className="w-full p-3 border border-gray-300 rounded bg-gray-50"
+              className="w-full p-3 border border-gray-600 rounded bg-gray-800 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium">{selectedTexts.phoneLabel}</label>
+            <label className="block text-gray-300 font-medium">{selectedTexts.phoneLabel}</label>
             <input
               type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
               placeholder={selectedTexts.phonePlaceholder}
-              pattern="^\+9665\d{8}$"
-              className="w-full p-3 border border-gray-300 rounded bg-gray-50"
+              pattern="^05\d{8}$"
+              className="w-full p-3 border border-gray-600 rounded bg-gray-800 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium">{selectedTexts.passwordLabel}</label>
+            <label className="block text-gray-300 font-medium">{selectedTexts.passwordLabel}</label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
               placeholder={selectedTexts.passwordPlaceholder}
-              className="w-full p-3 border border-gray-300 rounded bg-gray-50"
+              className="w-full p-3 border border-gray-600 rounded bg-gray-800 text-white"
               required
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium">{selectedTexts.confirmPasswordLabel}</label>
+            <label className="block text-gray-300 font-medium">{selectedTexts.confirmPasswordLabel}</label>
             <input
               type="password"
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
               placeholder={selectedTexts.confirmPasswordPlaceholder}
-              className="w-full p-3 border border-gray-300 rounded bg-gray-50"
+              className="w-full p-3 border border-gray-600 rounded bg-gray-800 text-white"
               required
             />
           </div>
@@ -185,7 +177,7 @@ const Registration = () => {
             {selectedTexts.registerButton}
           </button>
         </form>
-        <p className="text-center mt-4 text-gray-600">
+        <p className="text-center mt-4 text-gray-400">
           {selectedTexts.signInText}{" "}
           <a href="/login" className="text-yellow-500 hover:underline font-semibold">
             {selectedTexts.signInLink}

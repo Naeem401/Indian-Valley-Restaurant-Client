@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SectionTitle from "../../../componants/SectionTitle";
+import { FaSpinner } from "react-icons/fa";
 
 const AddItems = () => {
   const [itemData, setItemData] = useState({
@@ -16,7 +17,7 @@ const AddItems = () => {
     image: null,
   });
 
-  const [loading, setLoading] = useState(false); // For loading state during image upload
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -62,10 +63,10 @@ const AddItems = () => {
     setLoading(true);
 
     try {
-      // Step 1: Upload image to ImgBB
+      // Upload image to ImgBB
       const imageUrl = await uploadImageToImgBB(itemData.image);
 
-      // Step 2: Prepare item data with the image URL
+      //Prepare item data with the image URL
       const itemToSave = {
         name: {
           en: itemData.nameEn,
@@ -120,6 +121,13 @@ const AddItems = () => {
       setLoading(false);
     }
   };
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-[#1a1a1a]">
+        <FaSpinner className="animate-spin text-4xl text-[#D99904]" />
+      </div>
+    );
+  }
 
   return (
     <>
